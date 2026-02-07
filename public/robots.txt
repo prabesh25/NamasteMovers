@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.fastpackersandmovers.com.np
+
+# Sitemaps
+Sitemap: https://www.fastpackersandmovers.com.np/sitemap.xml
