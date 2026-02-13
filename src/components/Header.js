@@ -64,7 +64,7 @@ export default function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="section flex items-center justify-between py-3 md:h-16">
+      <div className="section flex items-center justify-between py-2 md:h-16">
         {/* Brand */}
         <Link href="/" className={brandClasses}>
           Fast Packers & Movers
