@@ -16,13 +16,13 @@ export const metadata = {
     "vehicle transport tips",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com.np/blog",
+    canonical: "https://www.fastpackersandmovers.com/blog",
   },
   openGraph: {
     title: "Moving Tips & Blog – Fast Packers and Movers Nepal",
     description:
       "Expert guides on room shifting, office shifting, packing & more in Nepal.",
-    url: "https://www.fastpackersandmovers.com.np/blog",
+    url: "https://www.fastpackersandmovers.com/blog",
   },
 };
 

@@ -94,7 +94,13 @@ export default function FAQ() {
 
             {/* Right content */}
             <div className="md:col-span-7">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">
+              <h2 
+              // className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">
+              className="text-xl md:text-2xl font-semibold mb-4 
+bg-clip-text text-transparent 
+bg-gradient-to-r from-red-400 via-red-400 to-orange-300">
+
+                
                 Frequently Asked Questions – Room Shifting, Office Shifting &amp; Moving in Nepal
               </h2>
 
@@ -120,7 +126,7 @@ export default function FAQ() {
                         </span>
 
                         <span
-                          className={`flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-gradient-to-r from-red-400 to-purple-500 text-white transition ${
+                          className={`flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-gradient-to-r from-red-400 to-orange-400 text-white transition ${
                             isOpen ? 'rotate-180' : ''
                           }`}
                           aria-hidden="true"
@@ -148,7 +154,7 @@ export default function FAQ() {
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-red-500 to-purple-500 px-4 py-2 text-white text-sm font-semibold hover:opacity-90 transition"
+                  className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-400 via-red-400/90 to-orange-400 px-4 py-2 text-white text-sm font-semibold hover:opacity-90 transition"
                 >
                   Contact support
                 </a>

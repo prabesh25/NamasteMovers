@@ -99,14 +99,14 @@ export const metadata = {
     "packers and movers in pokhara",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com.np",
+    canonical: "https://www.fastpackersandmovers.com",
   },
   openGraph: {
     title:
       "Fast Packers and Movers | Room Shifting & Office Shifting Nepal",
     description:
       "Nepal's most trusted packers and movers. Room shifting, office shifting, vehicle transport, and packing services across Kathmandu, Pokhara, Butwal & all Nepal.",
-    url: "https://www.fastpackersandmovers.com.np",
+    url: "https://www.fastpackersandmovers.com",
     type: "website",
   },
 };

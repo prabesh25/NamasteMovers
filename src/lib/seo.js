@@ -1,4 +1,4 @@
-export const siteUrl = "https://www.fastpackersandmovers.com.np";
+export const siteUrl = "https://www.fastpackersandmovers.com";
 export const siteName = "Fast Packers and Movers";
 export const sitePhone = "+977-9851226669";
 export const siteEmail = "Fastpackersnepal@gmail.com";

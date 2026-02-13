@@ -161,10 +161,17 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* title */}
         <h2
-          className="text-4xl md:text-5xl font-bold mb-20 text-center
-          bg-gradient-to-r from-red-500 via-orange-400 to-purple-500
-          bg-clip-text text-transparent
-          drop-shadow-[0_0_12px_rgba(255,100,100,0.25)]"
+          // className="text-4xl md:text-5xl font-bold mb-20 text-center
+          // bg-gradient-to-r from-red-500 via-orange-400 to-purple-500
+          // bg-clip-text text-transparent
+          // drop-shadow-[0_0_12px_rgba(255,100,100,0.25)]"
+        className="text-4xl md:text-5xl font-bold mb-20 text-center
+bg-clip-text text-transparent
+bg-gradient-to-r from-orange-400 via-red-400 to-orange-300
+drop-shadow-[0_0_12px_rgba(255,100,100,0.25)]"
+
+          
+        
         >
           What Our Customers Say About Our Moving Services
         </h2>

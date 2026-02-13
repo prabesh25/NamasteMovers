@@ -22,13 +22,13 @@ export const metadata = {
     "moving company branches nepal",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com.np/branches",
+    canonical: "https://www.fastpackersandmovers.com/branches",
   },
   openGraph: {
     title: "Our Branches – Fast Packers and Movers Across Nepal",
     description:
       "Find your nearest Fast Packers and Movers branch for room shifting, office shifting & more in Kathmandu, Pokhara, Butwal & across Nepal.",
-    url: "https://www.fastpackersandmovers.com.np/branches",
+    url: "https://www.fastpackersandmovers.com/branches",
   },
 };
 

@@ -188,18 +188,14 @@ export default function InfiniteGallerySlider() {
   const renderTrack = (ref, direction) => (
     <div
       ref={ref}
-      className="w-full overflow-hidden -mx-4 px-4"
+      className="w-full overflow-hidden"
       style={{ scrollBehavior: 'auto' }}
     >
-      <div className="flex items-center gap-6 whitespace-nowrap">
+      <div className="flex items-center gap-3 sm:gap-4 md:gap-6 whitespace-nowrap">
         {[...images, ...images].map((img, i) => (
           <div
             key={`${direction}-${i}`}
-            className="flex-shrink-0 rounded-xl overflow-hidden"
-            style={{
-              width: 'min(47vw, 650px)',
-              height: '65vh',
-            }}
+            className="flex-shrink-0 rounded-xl overflow-hidden w-[75vw] h-[35vh] sm:w-[45vw] sm:h-[40vh] md:w-[min(47vw,650px)] md:h-[65vh]"
           >
             <img
               src={img.src}
@@ -216,9 +212,8 @@ export default function InfiniteGallerySlider() {
   );
 
   return (
-    <section className="py-10 md:py-16 bg-[#fff7ed] text-slate-100">
-      <div className="container mx-auto px-4">
-
+    <section className="py-10 md:py-16 bg-[#fff7ed] text-slate-100 overflow-hidden">
+      <div className="px-4 mb-6">
         {/* Heading */}
         <h2 className="mt-3 text-3xl text-center mb-6 md:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-red-400 to-orange-300">
           OUR MOVING SERVICES ACROSS NEPAL
@@ -227,8 +222,7 @@ export default function InfiniteGallerySlider() {
         {/* Scrolling locations */}
         <div className="flex justify-center mb-1">
           <div className="relative w-full md:w-1/2 overflow-hidden backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl py-4">
-
-            <div className="animate-scroll flex gap-10 whitespace-nowrap  text-[#f65957] text-lg md:text-2xl font-semibold">
+            <div className="animate-scroll flex gap-10 whitespace-nowrap text-[#f65957] text-lg md:text-2xl font-semibold">
               {[...locations, ...locations].map((loc, i) => (
                 <span key={i} className="opacity-90">
                   {loc}
@@ -237,22 +231,18 @@ export default function InfiniteGallerySlider() {
             </div>
           </div>
         </div>
+      </div>
 
         {/* Gallery */}
-        <div className="relative w-full -mx-4 px-4">
-          <div className="mb-9">
-            <div className="overflow-hidden rounded-xl">
-              {renderTrack(topRef, 'top')}
-            </div>
+        <div className="w-full">
+          <div className="mb-4 sm:mb-6 md:mb-9">
+            {renderTrack(topRef, 'top')}
           </div>
 
           <div>
-            <div className="overflow-hidden rounded-xl">
-              {renderTrack(bottomRef, 'bottom')}
-            </div>
+            {renderTrack(bottomRef, 'bottom')}
           </div>
         </div>
-      </div>
 
       {/* CSS animation */}
       <style jsx>{`
