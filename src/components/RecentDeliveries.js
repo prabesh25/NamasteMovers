@@ -195,7 +195,7 @@ const deliveries = [
   {
     id: 2,
     item: 'Office Shifting – IT Equipment & Furniture',
-    image: '/deliveries/sofa.jpg',
+    image: '/officeShifting.jpg',
     from: 'Kathmandu, New Baneshwor',
     to: 'Pokhara, Lakeside',
     price: 'Rs 15,000',
@@ -204,7 +204,7 @@ const deliveries = [
   {
     id: 3,
     item: 'Vehicle Transport – Motorcycle',
-    image: '/deliveries/washer.jpg',
+    image: '/motorbikeMoving.jpg',
     from: 'Butwal',
     to: 'Kathmandu, Kalanki',
     price: 'Rs 8,000',
