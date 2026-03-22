@@ -2,30 +2,31 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import { FaCamera, FaVideo, FaBoxOpen, FaTruck, FaShieldAlt, FaClock, FaSmile, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 /* ─── Media Data ─── */
 const galleryImages = [
-  { src: "/img1.jpg", alt: "Professional packing team preparing household items in Kathmandu", category: "Packing" },
-  { src: "/img2.jpg", alt: "Office shifting and corporate relocation in progress", category: "Office Shifting" },
-  { src: "/img3.jpg", alt: "Safe vehicle transport across Nepal", category: "Vehicle Transport" },
-  { src: "/Hero.jpg", alt: "Fast Packers and Movers fleet ready for moving services", category: "Fleet" },
-  { src: "/img5.jpg", alt: "Customer relations team coordinating room shifting in Nepal", category: "Team" },
-  { src: "/img6.jpg", alt: "Room shifting service — careful loading of furniture", category: "Room Shifting" },
+  // { src: "/img1.jpg", alt: "Professional packing team preparing household items in Kathmandu", category: "Packing" },
+  { src: "/img2.jpg", alt: "Office shifting and corporate relocation at Dharan", category: "Dharan Transport" },
+  { src: "/img3.jpg", alt: "Safe vehicle transport across Nepal", category: "Kathmandu Transport" },
+  // { src: "/Hero.jpg", alt: "Namaste Packers and Movers fleet ready for moving services", category: "Fleet" },
+  { src: "/img5.jpg", alt: "Customer relations team coordinating room shifting in Janakpur", category: "Janakpur Transport" },
+  { src: "/img6.jpg", alt: "Room shifting service — careful loading of furniture at Hetauda", category: "Hetauda Transport" },
   { src: "/corporateMoving.jpg", alt: "Corporate moving and large-scale office relocation", category: "Office Shifting" },
   { src: "/ResidentialShifting.jpg", alt: "Residential shifting — home moving in Kathmandu Valley", category: "Room Shifting" },
   { src: "/vehicleAndBikeTransport.jpg", alt: "Bike and vehicle transport service with GPS tracking", category: "Vehicle Transport" },
   { src: "/PackingAndBoxing.jpg", alt: "Premium packing materials and boxing services", category: "Packing" },
-  { src: "/hero1.jpg", alt: "Fast Packers moving truck on the highway", category: "Fleet" },
-  { src: "/InternationalMoving.jpg", alt: "International moving and relocation services from Nepal", category: "Fleet" },
+  { src: "/hero1.jpg", alt: "Namaste Packers moving truck on the highway", category: "Fleet" },
+  // { src: "/InternationalMoving.jpg", alt: "International moving and relocation services from Nepal", category: "Fleet" },
 ];
 
 const galleryVideos = [
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Professional Packing Process", category: "Packing" },
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Room Shifting in Action", category: "Room Shifting" },
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Office Shifting & IT Equipment Handling", category: "Office Shifting" },
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Vehicle & Bike Transport", category: "Vehicle Transport" },
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Loading & Unloading Expertise", category: "Fleet" },
-  { src: "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4", title: "Team Coordination & Delivery", category: "Team" },
+  { src: "/videos/video1.mp4", title: "Professional Packing Process", category: "Packing" },
+  { src: "/videos/video2.mp4", title: "Room Shifting in Action", category: "Room Shifting" },
+  { src: "/videos/video3.mp4", title: "Office Shifting & IT Equipment Handling", category: "Office Shifting" },
+  { src: "/videos/video4.mp4", title: "Vehicle & Bike Transport", category: "Vehicle Transport" },
+  { src: "/videos/video1.mp4", title: "Loading & Unloading Expertise", category: "Fleet" },
+  { src: "/videos/video2.mp4", title: "Team Coordination & Delivery", category: "Team" },
 ];
 
 const categories = ["All", "Room Shifting", "Office Shifting", "Packing", "Vehicle Transport", "Fleet", "Team"];
@@ -119,7 +120,7 @@ export default function GalleryContent() {
           </nav>
 
           <span className="inline-block mb-4 px-5 py-2 rounded-full text-sm font-semibold backdrop-blur border border-white/10 bg-red-600/90 text-white">
-            📸 Photos &amp; Videos
+            <FaCamera className="inline-block mr-2" /> Photos &amp; Videos
           </span>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 max-w-4xl">
@@ -149,19 +150,20 @@ export default function GalleryContent() {
           <div className="bg-white/90 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.1)] p-6 md:p-8">
             {/* Photo / Video Toggle */}
             <div className="flex items-center justify-center gap-2 mb-6">
-              {[
-                { key: "photos", label: "📷 Photos", count: filteredImages.length },
-                { key: "videos", label: "🎬 Videos", count: filteredVideos.length },
-              ].map((tab) => (
+              {([
+                { key: "photos", label: "Photos", icon: <FaCamera />, count: filteredImages.length },
+                { key: "videos", label: "Videos", icon: <FaVideo />, count: filteredVideos.length },
+              ]).map((tab) => (
                 <button
                   key={tab.key}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     activeTab === tab.key
                       ? "bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg shadow-red-500/25 scale-105"
                       : "text-gray-500 hover:text-red-500 hover:bg-red-50"
                   }`}
                 >
+                  {tab.icon}
                   {tab.label}
                   <span className={`ml-2 text-xs px-2 py-0.5 rounded-full ${
                     activeTab === tab.key ? "bg-white/20 text-white" : "bg-gray-100 text-gray-500"
@@ -208,40 +210,65 @@ export default function GalleryContent() {
               </p>
             </div>
 
-            {/* Masonry-style Grid */}
+            {/* Zigzag Grid Layout */}
             {filteredImages.length > 0 ? (
-              <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
-                {filteredImages.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => openLightbox(idx, "photo")}
-                    className="group relative w-full break-inside-avoid rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-[0_30px_80px_-20px_rgba(255,80,80,0.2)] transition-all duration-500 focus:outline-none block"
-                  >
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${
-                        idx % 3 === 0 ? "h-72" : idx % 3 === 1 ? "h-96" : "h-80"
-                      }`}
-                      loading="lazy"
-                    />
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                      <div className="absolute bottom-0 left-0 right-0 p-5">
-                        <span className="inline-block mb-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-500/90 text-white backdrop-blur">
-                          {img.category}
-                        </span>
-                        <p className="text-white text-sm font-medium leading-relaxed">{img.alt}</p>
-                      </div>
-                      {/* Zoom icon */}
-                      <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                        </svg>
-                      </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredImages.map((img, idx) => {
+                  const row = Math.floor(idx / 3);
+                  const isMiddleColumn = idx % 3 === 1;
+                  
+                  // Determine the middle row index
+                  const totalRows = Math.ceil(filteredImages.length / 3);
+                  const middleRow = Math.floor(totalRows / 2);
+                  const isLastRow = row === totalRows - 1;
+
+                  let alignmentClass = "";
+                  // Apply zigzag to middle column images
+                  if (isMiddleColumn) {
+                    if (row === middleRow) {
+                      // Keep the absolute middle image centered
+                      alignmentClass = "";
+                    } else if (isLastRow) {
+                      // Always push the last row's middle image down
+                      alignmentClass = "translate-y-8";
+                    }
+                    else {
+                      // Alternate for other rows
+                      alignmentClass = row % 2 === 0 ? "-translate-y-8" : "translate-y-8";
+                    }
+                  }
+
+                  return (
+                    <div key={idx} className={`transition-transform duration-500 ${alignmentClass}`}>
+                      <button
+                        onClick={() => openLightbox(idx, "photo")}
+                        className="group relative w-full break-inside-avoid rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-[0_30px_80px_-20px_rgba(255,80,80,0.2)] transition-all duration-500 focus:outline-none block"
+                      >
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                          <div className="absolute bottom-0 left-0 right-0 p-5">
+                            <span className="inline-block mb-2 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-red-500 to-orange-500 text-white">
+                              {img.category}
+                            </span>
+                            <p className="text-white text-sm font-medium leading-relaxed">{img.alt}</p>
+                          </div>
+                          {/* Zoom icon */}
+                          <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
                     </div>
-                  </button>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <div className="text-center py-20 text-gray-400">
@@ -341,7 +368,7 @@ export default function GalleryContent() {
         <div className="max-w-7xl mx-auto relative z-10 px-6">
           <div className="text-center mb-12">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold tracking-wide text-orange-400 backdrop-blur">
-              🎥 Featured
+              <FaVideo className="inline-block mr-2" /> Featured
             </span>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent">
               Behind the Scenes
@@ -369,14 +396,14 @@ export default function GalleryContent() {
 
             {/* Info Cards */}
             <div className="space-y-5">
-              {[
-                { icon: "📦", title: "Premium Packing", desc: "Every item wrapped with bubble wrap, foam, and corrugated boxes." },
-                { icon: "🚛", title: "GPS-Tracked Fleet", desc: "Track your belongings in real-time across Nepal." },
-                { icon: "🛡️", title: "Zero-Damage Guarantee", desc: "Professional handling ensures your items arrive safe." },
-                { icon: "⏱️", title: "On-Time Delivery", desc: "We arrive on time, load fast, and deliver on schedule." },
-              ].map((item) => (
+              {([
+                { icon: <FaBoxOpen />, title: "Premium Packing", desc: "Every item wrapped with bubble wrap, foam, and corrugated boxes." },
+                { icon: <FaTruck />, title: "GPS-Tracked Fleet", desc: "Track your belongings in real-time across Nepal." },
+                { icon: <FaShieldAlt />, title: "Zero-Damage Guarantee", desc: "Professional handling ensures your items arrive safe." },
+                { icon: <FaClock />, title: "On-Time Delivery", desc: "We arrive on time, load Namaste, and deliver on schedule." },
+              ]).map((item) => (
                 <div key={item.title} className="flex items-start gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group">
-                  <span className="text-3xl flex-shrink-0">{item.icon}</span>
+                  <span className="text-3xl flex-shrink-0 text-orange-400">{item.icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-white group-hover:text-orange-400 transition-colors">{item.title}</h3>
                     <p className="text-white/50 text-sm mt-1">{item.desc}</p>
@@ -444,17 +471,17 @@ export default function GalleryContent() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { value: "500+", label: "Photos Captured", icon: "📸" },
-              { value: "100+", label: "Videos Recorded", icon: "🎬" },
-              { value: "15K+", label: "Happy Customers", icon: "😊" },
-              { value: "8+", label: "Cities Covered", icon: "📍" },
-            ].map((stat) => (
+            {([
+              { value: "500+", label: "Photos Captured", icon: <FaCamera /> },
+              { value: "100+", label: "Videos Recorded", icon: <FaVideo /> },
+              { value: "15K+", label: "Happy Customers", icon: <FaSmile /> },
+              { value: "20+", label: "Cities Covered", icon: <FaMapMarkerAlt /> },
+            ]).map((stat) => (
               <div
                 key={stat.label}
                 className="bg-gradient-to-br from-orange-50 to-red-50 backdrop-blur-xl rounded-2xl border border-orange-100 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.06)] p-6 text-center hover:shadow-[0_30px_80px_-20px_rgba(255,80,80,0.12)] hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="text-3xl mb-2">{stat.icon}</div>
+                <div className="text-3xl mb-2 text-orange-500">{stat.icon}</div>
                 <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-500 via-red-500 to-orange-400 bg-clip-text text-transparent">
                   {stat.value}
                 </div>
@@ -493,7 +520,7 @@ export default function GalleryContent() {
               Get Free Estimate →
             </Link>
             <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              📞 Call: +977-9851226669
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
             </a>
           </div>
         </div>

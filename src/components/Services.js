@@ -36,7 +36,7 @@ export default function Services() {
             Room Shifting, Office Shifting &amp; Moving Services in Nepal
           </h2>
           <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-            Professional moving services for homes, offices, vehicles, and international relocations. Fast Packers and Movers guarantees safe handling, on-time delivery, and customer satisfaction across Kathmandu, Pokhara, Butwal &amp; all Nepal.
+            Professional moving services for homes, offices, vehicles, and international relocations. Namaste Packers and Movers guarantees safe handling, on-time delivery, and customer satisfaction across Kathmandu, Pokhara, Butwal &amp; all Nepal.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function Services() {
                 <div className="aspect-[16/10] w-full bg-slate-100">
                   <img
                     src={s.img}
-                    alt={`${s.title} Service in Nepal - Fast Packers and Movers`}
+                    alt={`${s.title} Service in Nepal - Namaste Packers and Movers`}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                     loading="lazy"
                     decoding="async"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaMapMarkerAlt, FaCheckCircle, FaPhoneAlt, FaTruck, FaRoute, FaBuilding, FaBolt, FaUsers } from "react-icons/fa";
 
 const locations = [
   {
@@ -133,7 +134,7 @@ export default function LocationsContent() {
           </nav>
 
           <span className="inline-block mb-4 px-5 py-2 rounded-full text-sm font-semibold backdrop-blur border border-white/10 bg-red-600/90 text-white">
-            📍 12+ Branches • 75+ Districts
+            <FaMapMarkerAlt className="inline-block mr-2" /> 12+ Branches • 75+ Districts
           </span>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 max-w-5xl">
@@ -201,7 +202,7 @@ export default function LocationsContent() {
                 <div className="aspect-[4/3] relative">
                   <img
                     src={loc.img}
-                    alt={`Fast Packers and Movers in ${loc.city}, Nepal`}
+                    alt={`Namaste Packers and Movers in ${loc.city}, Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -212,7 +213,7 @@ export default function LocationsContent() {
                   </div>
                   <div className="absolute top-3 right-3">
                     <span className="inline-flex items-center rounded-full bg-red-500/90 backdrop-blur px-2.5 py-1 text-[10px] font-bold text-white">
-                      📍 Active
+                      <FaCheckCircle className="inline-block mr-1" /> Active
                     </span>
                   </div>
                 </div>
@@ -231,7 +232,7 @@ export default function LocationsContent() {
                     href={`tel:${loc.phone}`}
                     className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-5 py-2.5 text-sm text-white font-semibold hover:opacity-90 transition"
                   >
-                    📞 Call Branch
+                    <FaPhoneAlt /> Call Branch
                   </a>
                 </div>
               </button>
@@ -248,7 +249,7 @@ export default function LocationsContent() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold tracking-wide text-orange-400 backdrop-blur">
-              🚛 Popular Routes
+              <FaTruck className="inline-block mr-2" /> Popular Routes
             </span>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent">
               Popular Moving Routes
@@ -313,22 +314,22 @@ export default function LocationsContent() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Every city has different roads, building types, and challenges. That&apos;s why <strong className="text-gray-900">Fast Packers and Movers</strong> maintains trained local teams in every branch office.
+                  Every city has different roads, building types, and challenges. That&apos;s why <strong className="text-gray-900">Namaste Packers and Movers</strong> maintains trained local teams in every branch office.
                 </p>
                 <p>
-                  Our <strong className="text-gray-900">Kathmandu team</strong> knows every narrow galli and high-rise layout. Our <strong className="text-gray-900">Pokhara crew</strong> navigates lakeside streets expertly. Local knowledge means faster, safer, and smoother moves.
+                  Our <strong className="text-gray-900">Kathmandu team</strong> knows every narrow galli and high-rise layout. Our <strong className="text-gray-900">Pokhara crew</strong> navigates lakeside streets expertly. Local knowledge means Namasteer, safer, and smoother moves.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
-                {[
-                  { icon: "🗺️", text: "Local Route Knowledge" },
-                  { icon: "🏗️", text: "Building-Specific Plans" },
-                  { icon: "⚡", text: "Faster Response Times" },
-                  { icon: "🤝", text: "Trusted Local Crews" },
+                { [
+                  { icon: <FaRoute />, text: "Local Route Knowledge" },
+                  { icon: <FaBuilding />, text: "Building-Specific Plans" },
+                  { icon: <FaBolt />, text: "Faster Response Times" },
+                  { icon: <FaUsers />, text: "Trusted Local Crews" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border border-orange-100 shadow-sm">
-                    <span className="text-2xl">{item.icon}</span>
+                    <span className="text-2xl text-orange-500">{item.icon}</span>
                     <span className="font-semibold text-gray-800 text-sm">{item.text}</span>
                   </div>
                 ))}
@@ -344,7 +345,7 @@ export default function LocationsContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Fast Packers local team in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <img src="/img1.jpg" alt="Namaste Packers local team in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <img src="/img6.jpg" alt="Moving truck in Nepal" className="w-full h-64 object-cover" loading="lazy" />
@@ -389,7 +390,7 @@ export default function LocationsContent() {
               Get Free Estimate →
             </Link>
             <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              📞 Call: +977-9851226669
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
             </a>
           </div>
         </div>

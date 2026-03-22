@@ -37,6 +37,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '17': '4.25rem',
+      },
       colors: {
         brand: {
           50: "#f1f6ff",

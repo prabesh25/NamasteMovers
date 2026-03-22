@@ -2,9 +2,9 @@ import { generateBreadcrumbSchema } from "@/lib/seo";
 
 export const metadata = {
   title:
-    "Moving Tips & Blog – Room Shifting, Office Shifting & Packing Guides | Fast Packers and Movers",
+    "Moving Tips & Blog – Room Shifting, Office Shifting & Packing Guides | Namaste Packers and Movers",
   description:
-    "Read expert tips on room shifting, office shifting, residential moving, packing, vehicle transport & more in Nepal. Moving guides from Fast Packers and Movers to make your relocation stress-free.",
+    "Read expert tips on room shifting, office shifting, residential moving, packing, vehicle transport & more in Nepal. Moving guides from Namaste Packers and Movers to make your relocation stress-free.",
   keywords: [
     "moving tips nepal",
     "room shifting tips kathmandu",
@@ -16,13 +16,13 @@ export const metadata = {
     "vehicle transport tips",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com/blog",
+    canonical: "https://www.Namastepackersandmovers.com/blog",
   },
   openGraph: {
-    title: "Moving Tips & Blog – Fast Packers and Movers Nepal",
+    title: "Moving Tips & Blog – Namaste Packers and Movers Nepal",
     description:
       "Expert guides on room shifting, office shifting, packing & more in Nepal.",
-    url: "https://www.fastpackersandmovers.com/blog",
+    url: "https://www.Namastepackersandmovers.com/blog",
   },
 };
 
@@ -66,7 +66,7 @@ const posts = [
     title: "Packing and Boxing Tips for a Safe Move in Nepal",
     date: "November 08, 2021",
     excerpt:
-      "Professional packing and boxing tips from Fast Packers and Movers. Learn how to protect fragile items, organize boxes, and ensure a damage-free move.",
+      "Professional packing and boxing tips from Namaste Packers and Movers. Learn how to protect fragile items, organize boxes, and ensure a damage-free move.",
     slug: "packing-boxing-tips-safe-move",
   },
 ];
@@ -100,7 +100,7 @@ export default function BlogPage() {
           Moving Tips & Guides – Room Shifting, Office Shifting & More
         </h1>
         <p className="text-slate-600">
-          Expert guides and tips from <strong>Fast Packers and Movers</strong> to make your <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>residential moving</strong>, and <strong>packing</strong> experience in Nepal stress-free and safe.
+          Expert guides and tips from <strong>Namaste Packers and Movers</strong> to make your <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>residential moving</strong>, and <strong>packing</strong> experience in Nepal stress-free and safe.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-3">

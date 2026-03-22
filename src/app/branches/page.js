@@ -4,7 +4,7 @@ export const metadata = {
   title:
     "Our Branches – Packers and Movers in Kathmandu, Pokhara, Butwal & All Nepal",
   description:
-    "Fast Packers and Movers has branches in Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, and Janakpur. Find your nearest branch for room shifting, office shifting, and all moving services.",
+    "Namaste Packers and Movers has branches in Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, and Janakpur. Find your nearest branch for room shifting, office shifting, and all moving services.",
   keywords: [
     "packers and movers branches nepal",
     "packers and movers kathmandu branch",
@@ -22,13 +22,13 @@ export const metadata = {
     "moving company branches nepal",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com/branches",
+    canonical: "https://www.Namastepackersandmovers.com/branches",
   },
   openGraph: {
-    title: "Our Branches – Fast Packers and Movers Across Nepal",
+    title: "Our Branches – Namaste Packers and Movers Across Nepal",
     description:
-      "Find your nearest Fast Packers and Movers branch for room shifting, office shifting & more in Kathmandu, Pokhara, Butwal & across Nepal.",
-    url: "https://www.fastpackersandmovers.com/branches",
+      "Find your nearest Namaste Packers and Movers branch for room shifting, office shifting & more in Kathmandu, Pokhara, Butwal & across Nepal.",
+    url: "https://www.Namastepackersandmovers.com/branches",
   },
 };
 
@@ -109,10 +109,10 @@ export default function BranchesPage() {
 
       <div className="max-w-3xl space-y-3">
         <h1 className="text-3xl font-bold text-slate-900">
-          Fast Packers and Movers Branches Across Nepal
+          Namaste Packers and Movers Branches Across Nepal
         </h1>
         <p className="text-slate-600">
-          Find your nearest <strong>Fast Packers and Movers</strong> branch for <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>vehicle transport</strong>, and <strong>packing services</strong>. Call 24/7 for any branch: <a href="tel:+9779851226669" className="text-red-500 font-semibold hover:underline">+977 9851226669</a>
+          Find your nearest <strong>Namaste Packers and Movers</strong> branch for <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>vehicle transport</strong>, and <strong>packing services</strong>. Call 24/7 for any branch: <a href="tel:+9779851226669" className="text-red-500 font-semibold hover:underline">+977 9851226669</a>
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -133,7 +133,7 @@ export default function BranchesPage() {
           Packers and Movers in Every Major City of Nepal
         </h2>
         <p className="text-slate-600">
-          Whether you need <strong>packers and movers in Kathmandu</strong>, <strong>room shifting in Pokhara</strong>, <strong>office shifting in Butwal</strong>, or <strong>house shifting in Biratnagar</strong> — Fast Packers and Movers has local branches with experienced crews ready to help. Our network covers all major cities including Dharan, Chitwan, Hetauda, Bhaktapur, Lalitpur, and Janakpur. Each branch offers the full range of services: residential shifting, corporate moving, vehicle &amp; bike transport, and professional packing &amp; boxing.
+          Whether you need <strong>packers and movers in Kathmandu</strong>, <strong>room shifting in Pokhara</strong>, <strong>office shifting in Butwal</strong>, or <strong>house shifting in Biratnagar</strong> — Namaste Packers and Movers has local branches with experienced crews ready to help. Our network covers all major cities including Dharan, Chitwan, Hetauda, Bhaktapur, Lalitpur, and Janakpur. Each branch offers the full range of services: residential shifting, corporate moving, vehicle &amp; bike transport, and professional packing &amp; boxing.
         </p>
       </article>
     </div>

@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'cdn.coverr.co'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.coverr.co',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   // Enable compression for better page speed (helps SEO)

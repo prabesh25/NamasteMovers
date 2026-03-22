@@ -3,9 +3,9 @@ import ContactContent from "@/components/ContactContent";
 
 export const metadata = {
   title:
-    "Contact Fast Packers and Movers | Get Free Quote for Room & Office Shifting",
+    "Contact Namaste Packers and Movers | Get Free Quote for Room & Office Shifting",
   description:
-    "Contact Fast Packers and Movers for a free quote on room shifting, office shifting, vehicle transport, packing services & more in Kathmandu, Pokhara, Butwal & across Nepal. Call 24/7: +977-9851226669 or email Fastpackersnepal@gmail.com.",
+    "Contact Namaste Packers and Movers for a free quote on room shifting, office shifting, vehicle transport, packing services & more in Kathmandu, Pokhara, Butwal & across Nepal. Call 24/7: +977-9851226669 or email Namastepackersnepal@gmail.com.",
   keywords: [
     "contact packers and movers nepal",
     "free moving quote kathmandu",
@@ -13,16 +13,16 @@ export const metadata = {
     "office shifting quote kathmandu",
     "packers movers phone number nepal",
     "moving company contact nepal",
-    "fast packers and movers contact",
+    "Namaste packers and movers contact",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com/contact",
+    canonical: "https://www.Namastepackersandmovers.com/contact",
   },
   openGraph: {
-    title: "Contact Fast Packers and Movers | Free Moving Quote Nepal",
+    title: "Contact Namaste Packers and Movers | Free Moving Quote Nepal",
     description:
       "Get a free quote for room shifting, office shifting, and all moving services in Nepal. Call 24/7.",
-    url: "https://www.fastpackersandmovers.com/contact",
+    url: "https://www.Namastepackersandmovers.com/contact",
   },
 };
 

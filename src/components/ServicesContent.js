@@ -10,7 +10,7 @@ const services = [
     icon: (<svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" /></svg>),
     color: "from-red-500 to-orange-500",
     description:
-      "Need to shift your room in Kathmandu, Pokhara, Butwal, or anywhere in Nepal? Fast Packers and Movers provides safe, affordable, and professional room shifting services with careful packing, loading, transport, and unpacking at your new location.",
+      "Need to shift your room in Kathmandu, Pokhara, Butwal, or anywhere in Nepal? Namaste Packers and Movers provides safe, affordable, and professional room shifting services with careful packing, loading, transport, and unpacking at your new location.",
     features: [
       "Safe packing of all belongings",
       "Careful loading & unloading",
@@ -215,7 +215,7 @@ export default function ServicesContent() {
               </h1>
 
               <p className="text-gray-500 text-lg leading-relaxed max-w-md">
-                8 specialized services — from room shifting to international moving. Safe, fast, and affordable.
+                8 specialized services — from room shifting to international moving. Safe, Namaste, and affordable.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -292,7 +292,7 @@ export default function ServicesContent() {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group">
                     <img
                       src={service.img}
-                      alt={`${service.name} service in Nepal - Fast Packers and Movers`}
+                      alt={`${service.name} service in Nepal - Namaste Packers and Movers`}
                       className="w-full h-72 md:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
@@ -383,7 +383,7 @@ export default function ServicesContent() {
       </section>
 
       {/* ==================== WHY CHOOSE US ==================== */}
-      <section className="py-20 md:py-28 px-6 bg-gradient-to-b from-orange-50 via-red-50 to-orange-50 relative overflow-hidden">
+      {/* <section className="py-20 md:py-28 px-6 bg-gradient-to-b from-orange-50 via-red-50 to-orange-50 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-gradient-to-r from-red-200/40 via-orange-200/30 to-purple-100/40 blur-3xl" />
         </div>
@@ -398,13 +398,13 @@ export default function ServicesContent() {
                 Nepal&apos;s Most Trusted Moving Company
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                With <strong className="text-gray-900">15+ years</strong>, <strong className="text-gray-900">15,000+ successful moves</strong>, and <strong className="text-gray-900">500+ trained professionals</strong>, Fast Packers and Movers delivers safe, affordable, and on-time moving services across Nepal.
+                With <strong className="text-gray-900">15+ years</strong>, <strong className="text-gray-900">15,000+ successful moves</strong>, and <strong className="text-gray-900">500+ trained professionals</strong>, Namaste Packers and Movers delivers safe, affordable, and on-time moving services across Nepal.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { val: "15,000+", label: "Moves Completed" },
-                  { val: "500+", label: "Team Members" },
+                  { val: "50+", label: "Team Members" },
                   { val: "99%", label: "Customer Satisfaction" },
                   { val: "8+", label: "City Branches" },
                 ].map((stat) => (
@@ -434,7 +434,7 @@ export default function ServicesContent() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ==================== CTA SECTION ==================== */}
       <section className="relative py-24 md:py-32 px-6 overflow-hidden">

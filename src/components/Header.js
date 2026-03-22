@@ -6,6 +6,7 @@
 
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 
 const nav = [
   { href: "/", label: "HOME" },
@@ -90,10 +91,16 @@ export default function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="section flex items-center justify-between py-2 md:h-16">
+      <div className="section flex items-center justify-between py-2 md:h-[80px]">
         {/* Brand */}
-        <Link href="/" className={brandClasses}>
-          Fast Packers & Movers
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/mainLogo.png"
+            alt="Namaste Packers & Movers"
+            width={150}
+            height={0}
+            className="object-cover"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -144,7 +151,7 @@ export default function Header() {
           <Link
             href="/contact"
             className="rounded-full px-6 py-2.5 font-semibold tracking-wide text-sm text-white
-                       bg-gradient-to-r from-orange-400 via-red-500 to-orange-400
+                       bg-gradient-to-r from-orange-400 via-red-400 to-orange-400
                        hover:opacity-90 transition"
           >
             GET A QUOTE

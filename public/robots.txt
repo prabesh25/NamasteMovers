@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.fastpackersandmovers.com
+Host: https://www.Namastepackersandmovers.com
 
 # Sitemaps
-Sitemap: https://www.fastpackersandmovers.com/sitemap.xml
+Sitemap: https://www.Namastepackersandmovers.com/sitemap.xml

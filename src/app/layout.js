@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.fastpackersandmovers.com" />
+        <link rel="canonical" href="https://www.Namastepackersandmovers.com" />
         <meta name="geo.region" content="NP" />
         <meta name="geo.placename" content="Kathmandu" />
         <meta name="geo.position" content="27.6933;85.2812" />

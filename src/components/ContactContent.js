@@ -2,14 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaCheckCircle, FaQuestionCircle, FaClock } from "react-icons/fa";
 
 const contactMethods = [
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-      </svg>
-    ),
+    icon: <FaPhoneAlt className="w-7 h-7" />,
     title: "Call Us 24/7",
     value: "+977-9851226669",
     href: "tel:+9779851226669",
@@ -17,24 +14,15 @@ const contactMethods = [
     color: "from-red-500 to-orange-500",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
+    icon: <FaEnvelope className="w-7 h-7" />,
     title: "Email Us",
-    value: "Fastpackersnepal@gmail.com",
-    href: "mailto:Fastpackersnepal@gmail.com",
+    value: "Namastepackersnepal@gmail.com",
+    href: "mailto:Namastepackersnepal@gmail.com",
     desc: "Send us your requirements. We'll respond within 1 hour.",
     color: "from-blue-500 to-indigo-500",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
+    icon: <FaMapMarkerAlt className="w-7 h-7" />,
     title: "Visit Our Office",
     value: "Kalanki, Kathmandu-32, Nepal",
     href: "https://maps.google.com/?q=Kalanki+Kathmandu+Nepal",
@@ -42,11 +30,7 @@ const contactMethods = [
     color: "from-emerald-500 to-teal-500",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-    ),
+    icon: <FaWhatsapp className="w-7 h-7" />,
     title: "WhatsApp",
     value: "+977-9851226669",
     href: "https://wa.me/9779851226669",
@@ -146,9 +130,7 @@ export default function ContactContent() {
                   className="group flex items-center gap-3 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 px-6 py-4 text-white font-semibold shadow-lg shadow-red-500/25 hover:shadow-red-500/40 hover:scale-[1.02] transition-all duration-300"
                 >
                   <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 group-hover:bg-white/30 transition">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
+                    <FaPhoneAlt className="w-5 h-5" />
                   </span>
                   <div className="text-left">
                     <span className="block text-xs text-white/70 font-normal">Call Now</span>
@@ -162,10 +144,7 @@ export default function ContactContent() {
                   className="group flex items-center gap-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm px-6 py-4 text-white font-semibold hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] transition-all duration-300"
                 >
                   <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-green-500/20 group-hover:bg-green-500/30 transition">
-                    <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.546 4.095 1.504 5.82L0 24l6.335-1.464A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.87 0-3.623-.5-5.13-1.378l-.368-.218-3.813.882.956-3.5-.24-.38A9.78 9.78 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z" />
-                    </svg>
+                    <FaWhatsapp className="w-5 h-5 text-green-400" />
                   </span>
                   <div className="text-left">
                     <span className="block text-xs text-white/50 font-normal">WhatsApp</span>
@@ -250,7 +229,7 @@ export default function ContactContent() {
                 <div className="flex flex-wrap gap-2">
                   {["Kathmandu", "Lalitpur", "Bhaktapur", "Pokhara", "Butwal", "Biratnagar", "Dharan", "Chitwan", "Hetauda", "Janakpur", "Nepalgunj", "Dhangadhi"].map((city) => (
                     <span key={city} className="inline-block rounded-full bg-white border border-orange-200 px-3 py-1 text-xs font-semibold text-gray-700">
-                      📍 {city}
+                      <FaMapMarkerAlt className="inline-block mr-1" /> {city}
                     </span>
                   ))}
                 </div>
@@ -269,7 +248,7 @@ export default function ContactContent() {
 
                 {formStatus === "success" && (
                   <div className="mb-6 bg-green-50 border border-green-200 rounded-2xl p-4 flex items-center gap-3">
-                    <span className="text-2xl">✅</span>
+                    <FaCheckCircle className="text-2xl text-green-500" />
                     <div>
                       <p className="font-bold text-green-800">Quote Request Sent!</p>
                       <p className="text-green-600 text-sm">Our team will contact you within 30 minutes.</p>
@@ -384,7 +363,7 @@ export default function ContactContent() {
         <div className="max-w-3xl mx-auto relative z-10">
           <div className="text-center mb-14">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold tracking-wide text-orange-400 backdrop-blur">
-              ❓ Common Questions
+              <FaQuestionCircle className="inline-block mr-2" /> Common Questions
             </span>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent">
               Frequently Asked Questions
@@ -436,41 +415,41 @@ export default function ContactContent() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Fast Packers and Movers office location in Kalanki, Kathmandu"
+                title="Namaste Packers and Movers office location in Kalanki, Kathmandu"
               />
             </div>
 
             {/* Office info */}
             <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-8 md:p-10 flex flex-col justify-center space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Fast Packers and Movers</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Namaste Packers and Movers</h3>
                 <p className="text-gray-500">Head Office</p>
               </div>
 
               <address className="not-italic space-y-4 text-gray-700">
                 <div className="flex items-start gap-3">
-                  <span className="text-xl">📍</span>
+                  <FaMapMarkerAlt className="text-xl text-gray-400 mt-1" />
                   <div>
                     <p className="font-semibold">Kalanki, Kathmandu-32</p>
                     <p className="text-gray-500 text-sm">Nepal</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-xl">📞</span>
+                  <FaPhoneAlt className="text-xl text-gray-400 mt-1" />
                   <div>
                     <a href="tel:+9779851226669" className="font-semibold text-red-600 hover:underline">+977-9851226669</a>
                     <p className="text-gray-500 text-sm">Available 24 hours, 7 days</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-xl">✉️</span>
+                  <FaEnvelope className="text-xl text-gray-400 mt-1" />
                   <div>
-                    <a href="mailto:Fastpackersnepal@gmail.com" className="font-semibold text-red-600 hover:underline">Fastpackersnepal@gmail.com</a>
+                    <a href="mailto:Namastepackersnepal@gmail.com" className="font-semibold text-red-600 hover:underline">Namastepackersnepal@gmail.com</a>
                     <p className="text-gray-500 text-sm">Response within 1 hour</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-xl">🕐</span>
+                  <FaClock className="text-xl text-gray-400 mt-1" />
                   <div>
                     <p className="font-semibold">Working Hours</p>
                     <p className="text-gray-500 text-sm">24/7 — Always open for your move</p>
@@ -480,10 +459,10 @@ export default function ContactContent() {
 
               <div className="flex gap-3 pt-2">
                 <a href="tel:+9779851226669" className="flex-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
-                  📞 Call Now
+                  <FaPhoneAlt className="inline-block mr-2" /> Call Now
                 </a>
                 <a href="https://wa.me/9779851226669" target="_blank" rel="noopener noreferrer" className="flex-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
-                  💬 WhatsApp
+                  <FaWhatsapp className="inline-block mr-2" /> WhatsApp
                 </a>
               </div>
             </div>

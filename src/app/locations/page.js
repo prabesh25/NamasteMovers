@@ -3,9 +3,9 @@ import LocationsContent from "@/components/LocationsContent";
 
 export const metadata = {
   title:
-    "Service Areas – Room Shifting & Office Shifting Across Nepal | Fast Packers and Movers",
+    "Service Areas – Room Shifting & Office Shifting Across Nepal | Namaste Packers and Movers",
   description:
-    "Fast Packers and Movers provides room shifting, office shifting, residential moving, vehicle transport & packing services in Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, Janakpur & more cities in Nepal.",
+    "Namaste Packers and Movers provides room shifting, office shifting, residential moving, vehicle transport & packing services in Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, Janakpur & more cities in Nepal.",
   keywords: [
     "packers and movers service areas nepal",
     "room shifting kathmandu",
@@ -22,14 +22,14 @@ export const metadata = {
     "packers movers janakpur",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com/locations",
+    canonical: "https://www.Namastepackersandmovers.com/locations",
   },
   openGraph: {
     title:
       "Service Areas – Room & Office Shifting Across Nepal",
     description:
-      "Find Fast Packers and Movers in your city. Room shifting, office shifting & more across Kathmandu, Pokhara, Butwal & all Nepal.",
-    url: "https://www.fastpackersandmovers.com/locations",
+      "Find Namaste Packers and Movers in your city. Room shifting, office shifting & more across Kathmandu, Pokhara, Butwal & all Nepal.",
+    url: "https://www.Namastepackersandmovers.com/locations",
   },
 };
 

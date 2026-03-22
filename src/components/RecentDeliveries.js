@@ -412,7 +412,7 @@ export default function RecentDeliveries() {
             </h2>
 
             <p className="mt-4 text-base md:text-lg leading-relaxed text-slate-600">
-              See how Fast Packers and Movers delivers safe, affordable, and on-time room shifting, office shifting, vehicle transport, and packing services across Nepal. Get a free quote for your move today.
+              See how Namaste Packers and Movers delivers safe, affordable, and on-time room shifting, office shifting, vehicle transport, and packing services across Nepal. Get a free quote for your move today.
             </p>
 
             {/* Trust chips */}

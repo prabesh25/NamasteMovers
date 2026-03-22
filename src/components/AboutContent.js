@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import { FaShieldAlt, FaClock, FaUsers, FaDollarSign, FaGlobe, FaPhoneAlt, FaVideo, FaBoxOpen, FaTruck, FaClipboardList, FaMapMarkerAlt } from "react-icons/fa";
 
 const milestones = [
   { year: "2010", title: "Founded in Kathmandu", desc: "Started with 3 team members and a single truck in Kalanki, Kathmandu." },
@@ -14,44 +15,32 @@ const milestones = [
 
 const values = [
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-    ),
+    icon: <FaShieldAlt className="w-7 h-7" />,
     title: "Safety First",
     desc: "Every item is treated like our own. Premium packing materials, careful handling, and systematic labeling ensure zero-damage moves.",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-    ),
+    icon: <FaClock className="w-7 h-7" />,
     title: "Always On Time",
     desc: "We respect your schedule. Our teams arrive on time, work efficiently, and deliver on the promised date — every single time.",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-    ),
+    icon: <FaUsers className="w-7 h-7" />,
     title: "Expert Team",
     desc: "500+ trained professionals who know how to pack, load, transport, and set up everything — from delicate glassware to heavy furniture.",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-    ),
+    icon: <FaDollarSign className="w-7 h-7" />,
     title: "Transparent Pricing",
     desc: "No hidden charges, no surprises. Get a free estimate upfront and pay exactly what's quoted. Fair pricing for every budget.",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-    ),
+    icon: <FaGlobe className="w-7 h-7" />,
     title: "Pan-Nepal Coverage",
     desc: "From Kathmandu to Biratnagar, Pokhara to Dhangadhi — our branches across 8+ cities ensure we're always close to you.",
   },
   {
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-    ),
+    icon: <FaPhoneAlt className="w-7 h-7" />,
     title: "24/7 Support",
     desc: "Call us anytime — day or night. Our team is always available for bookings, queries, and live move coordination.",
   },
@@ -127,14 +116,14 @@ export default function AboutContent() {
   // ====== LOCAL VIDEOS — Add your real moving videos here ======
   // Just drop .mp4 files in public/videos/ and add the paths below
   const localVideos = [
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
-    "/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4",
+    "/videos/video1.mp4",
+    "/videos/video2.mp4",
+    "/videos/video3.mp4",
+    "/videos/video4.mp4",
+    "/videos/video1.mp4",
+    "/videos/video2.mp4",
+    "/videos/video3.mp4",
+    "/videos/video4.mp4",
   ];
 
   return (
@@ -214,10 +203,10 @@ export default function AboutContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Fast Packers team packing household items in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <img src="/img1.jpg" alt="Namaste Packers team packing household items in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img6.jpg" alt="Room shifting by Fast Packers in Nepal" className="w-full h-64 object-cover" loading="lazy" />
+                    <img src="/img6.jpg" alt="Room shifting by Namaste Packers in Nepal" className="w-full h-64 object-cover" loading="lazy" />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
@@ -247,7 +236,7 @@ export default function AboutContent() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Fast Packers and Movers</strong> was founded in 2010 with a simple vision: make moving stress-free for every Nepali family and business. What started with 3 dedicated team members and a single truck in Kalanki, Kathmandu has grown into Nepal&apos;s most trusted moving company.
+                  <strong className="text-gray-900">Namaste Packers and Movers</strong> was founded in 2010 with a simple vision: make moving stress-free for every Nepali family and business. What started with 3 dedicated team members and a single truck in Kalanki, Kathmandu has grown into Nepal&apos;s most trusted moving company.
                 </p>
                 <p>
                   Today, we have <strong className="text-gray-900">500+ expert team members</strong>, branches in <strong className="text-gray-900">8+ major cities</strong>, and over <strong className="text-gray-900">15,000 successful moves</strong> completed. From <strong className="text-gray-900">room shifting in Kathmandu</strong> to <strong className="text-gray-900">office shifting in Pokhara</strong>, from <strong className="text-gray-900">vehicle transport</strong> to <strong className="text-gray-900">international relocations</strong> — we handle it all with care, speed, and professionalism.
@@ -279,7 +268,7 @@ export default function AboutContent() {
         <div className="max-w-7xl mx-auto relative z-10 px-6">
           <div className="text-center mb-6">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold tracking-wide text-orange-400 backdrop-blur">
-              📹 Real Moving Videos
+              <FaVideo className="inline-block mr-2" /> Real Moving Videos
             </span>
             <h2 className="mt-4 text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-red-400 to-orange-300 bg-clip-text text-transparent">
               Our Work in Action
@@ -416,7 +405,7 @@ export default function AboutContent() {
               Our Core Values
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              What makes Fast Packers and Movers the #1 choice for room shifting, office shifting, and moving services in Nepal.
+              What makes Namaste Packers and Movers the #1 choice for room shifting, office shifting, and moving services in Nepal.
             </p>
           </div>
 
@@ -496,7 +485,7 @@ export default function AboutContent() {
                 <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-xl mb-4 aspect-[3/4]">
                   <img
                     src={member.img}
-                    alt={`${member.name} - ${member.role} at Fast Packers and Movers Nepal`}
+                    alt={`${member.name} - ${member.role} at Namaste Packers and Movers Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -520,7 +509,9 @@ export default function AboutContent() {
                 <div className="aspect-video bg-black">
                   <video autoPlay muted loop playsInline className="w-full h-full object-cover">
                     <source
-                      src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
+                      // src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
+                                            src="/videos/heroVideo.mp4"
+
                       type="video/mp4"
                     />
                   </video>
@@ -545,14 +536,14 @@ export default function AboutContent() {
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                {[
-                  { icon: "📦", text: "Premium Packing" },
-                  { icon: "🚛", text: "GPS-Tracked Fleet" },
-                  { icon: "🛡️", text: "Damage Protection" },
-                  { icon: "📋", text: "Full Inventory" },
-                ].map((item) => (
+                {([
+                  { icon: <FaBoxOpen />, text: "Premium Packing" },
+                  { icon: <FaTruck />, text: "GPS-Tracked Fleet" },
+                  { icon: <FaShieldAlt />, text: "Damage Protection" },
+                  { icon: <FaClipboardList />, text: "Full Inventory" },
+                ]).map((item) => (
                   <div key={item.text} className="flex items-center gap-3 bg-orange-50 rounded-xl px-4 py-3 border border-orange-100">
-                    <span className="text-2xl">{item.icon}</span>
+                    <span className="text-2xl text-orange-500">{item.icon}</span>
                     <span className="font-semibold text-gray-800 text-sm">{item.text}</span>
                   </div>
                 ))}
@@ -561,8 +552,6 @@ export default function AboutContent() {
           </div>
         </div>
       </section>
-
-
 
       {/* ==================== SERVICE AREAS ==================== */}
       <section className="py-20 md:py-28 px-6 bg-gradient-to-b from-orange-50 via-red-50 to-orange-50">
@@ -580,7 +569,7 @@ export default function AboutContent() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {["Kathmandu", "Lalitpur", "Bhaktapur", "Pokhara", "Butwal", "Biratnagar", "Dharan", "Chitwan", "Hetauda", "Janakpur", "Nepalgunj", "Dhangadhi"].map((city) => (
                 <div key={city} className="rounded-xl bg-gradient-to-br from-orange-50 to-red-50 border border-orange-100 p-4 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all">
-                  <div className="text-2xl mb-1">📍</div>
+                  <FaMapMarkerAlt className="text-2xl mb-1 mx-auto text-orange-500" />
                   <div className="font-semibold text-gray-800 text-sm">{city}</div>
                 </div>
               ))}
@@ -626,7 +615,7 @@ export default function AboutContent() {
               Get Free Estimate →
             </Link>
             <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              📞 Call: +977-9851226669
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
             </a>
           </div>
         </div>

@@ -3,9 +3,9 @@ import ServicesContent from "@/components/ServicesContent";
 
 export const metadata = {
   title:
-    "Our Services – Room Shifting, Office Shifting, Vehicle Transport & Packing | Fast Packers and Movers Nepal",
+    "Our Services – Room Shifting, Office Shifting, Vehicle Transport & Packing | Namaste Packers and Movers Nepal",
   description:
-    "Fast Packers and Movers offers professional room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, packing & boxing, international moving, and storage services in Kathmandu, Pokhara, Butwal & across Nepal. Call 24/7: +977-9851226669.",
+    "Namaste Packers and Movers offers professional room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, packing & boxing, international moving, and storage services in Kathmandu, Pokhara, Butwal & across Nepal. Call 24/7: +977-9851226669.",
   keywords: [
     "room shifting service nepal",
     "room shifting service kathmandu",
@@ -25,14 +25,14 @@ export const metadata = {
     "packers and movers services nepal",
   ],
   alternates: {
-    canonical: "https://www.fastpackersandmovers.com/services",
+    canonical: "https://www.Namastepackersandmovers.com/services",
   },
   openGraph: {
     title:
-      "Our Services – Room Shifting, Office Shifting & More | Fast Packers and Movers",
+      "Our Services – Room Shifting, Office Shifting & More | Namaste Packers and Movers",
     description:
       "Professional room shifting, office shifting, vehicle transport, packing & boxing across Nepal.",
-    url: "https://www.fastpackersandmovers.com/services",
+    url: "https://www.Namastepackersandmovers.com/services",
   },
 };
 
