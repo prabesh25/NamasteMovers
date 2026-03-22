@@ -233,6 +233,7 @@ export default function InfiniteGallerySlider() {
         </div>
       </div>
 
+
         {/* Gallery */}
         <div className="w-full">
           <div className="mb-4 sm:mb-6 md:mb-9">
