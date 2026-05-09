@@ -27,7 +27,7 @@ const values = [
   {
     icon: <FaUsers className="w-7 h-7" />,
     title: "Expert Team",
-    desc: "500+ trained professionals who know how to pack, load, transport, and set up everything — from delicate glassware to heavy furniture.",
+    desc: "50+ trained professionals who know how to pack, load, transport, and set up everything — from delicate glassware to heavy furniture.",
   },
   {
     icon: <FaDollarSign className="w-7 h-7" />,
@@ -55,7 +55,7 @@ const teamMembers = [
 
 const statsData = [
   { value: "15,000+", label: "Successful Moves" },
-  { value: "500+", label: "Team Members" },
+  { value: "100+", label: "Team Members" },
   { value: "8+", label: "City Branches" },
   { value: "99%", label: "Satisfaction" },
   { value: "15+", label: "Years Experience" },
@@ -203,10 +203,10 @@ export default function AboutContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Namaste Packers team packing household items in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <img src="/img1.jpg" alt="Sajilo Packers team packing household items in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img6.jpg" alt="Room shifting by Namaste Packers in Nepal" className="w-full h-64 object-cover" loading="lazy" />
+                    <img src="/img6.jpg" alt="Room shifting by Sajilo Packers in Nepal" className="w-full h-64 object-cover" loading="lazy" />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
@@ -236,7 +236,7 @@ export default function AboutContent() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Namaste Packers and Movers</strong> was founded in 2010 with a simple vision: make moving stress-free for every Nepali family and business. What started with 3 dedicated team members and a single truck in Kalanki, Kathmandu has grown into Nepal&apos;s most trusted moving company.
+                  <strong className="text-gray-900">Sajilo Packers and Movers</strong> was founded in 2010 with a simple vision: make moving stress-free for every Nepali family and business. What started with 3 dedicated team members and a single truck in Kalanki, Kathmandu has grown into Nepal&apos;s most trusted moving company.
                 </p>
                 <p>
                   Today, we have <strong className="text-gray-900">500+ expert team members</strong>, branches in <strong className="text-gray-900">8+ major cities</strong>, and over <strong className="text-gray-900">15,000 successful moves</strong> completed. From <strong className="text-gray-900">room shifting in Kathmandu</strong> to <strong className="text-gray-900">office shifting in Pokhara</strong>, from <strong className="text-gray-900">vehicle transport</strong> to <strong className="text-gray-900">international relocations</strong> — we handle it all with care, speed, and professionalism.
@@ -405,7 +405,7 @@ export default function AboutContent() {
               Our Core Values
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              What makes Namaste Packers and Movers the #1 choice for room shifting, office shifting, and moving services in Nepal.
+              What makes Sajilo Packers and Movers the #1 choice for room shifting, office shifting, and moving services in Nepal.
             </p>
           </div>
 
@@ -485,7 +485,7 @@ export default function AboutContent() {
                 <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-xl mb-4 aspect-[3/4]">
                   <img
                     src={member.img}
-                    alt={`${member.name} - ${member.role} at Namaste Packers and Movers Nepal`}
+                    alt={`${member.name} - ${member.role} at Sajilo Packers and Movers Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -614,8 +614,8 @@ export default function AboutContent() {
             <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
+            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851071848
             </a>
           </div>
         </div>

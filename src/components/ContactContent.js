@@ -8,32 +8,32 @@ const contactMethods = [
   {
     icon: <FaPhoneAlt className="w-7 h-7" />,
     title: "Call Us 24/7",
-    value: "+977-9851226669",
-    href: "tel:+9779851226669",
+    value: "+977-9851071848",
+    href: "tel:+9779851071848",
     desc: "Instant response, day or night. Our team is always ready.",
     color: "from-red-500 to-orange-500",
   },
   {
     icon: <FaEnvelope className="w-7 h-7" />,
     title: "Email Us",
-    value: "Namastepackersnepal@gmail.com",
-    href: "mailto:Namastepackersnepal@gmail.com",
+    value: "Padamsunchiuri95@gmail.com",
+    href: "mailto:Padamsunchiuri95@gmail.com",
     desc: "Send us your requirements. We'll respond within 1 hour.",
     color: "from-blue-500 to-indigo-500",
   },
   {
     icon: <FaMapMarkerAlt className="w-7 h-7" />,
     title: "Visit Our Office",
-    value: "Kalanki, Kathmandu-32, Nepal",
-    href: "https://maps.google.com/?q=Kalanki+Kathmandu+Nepal",
+    value: "Baluwatar, Kathmandu, Nepal",
+    href: "https://www.google.com/maps/search/?api=1&query=Baluwatar+Kathmandu+Nepal",
     desc: "Walk in for a free consultation and moving plan.",
     color: "from-emerald-500 to-teal-500",
   },
   {
     icon: <FaWhatsapp className="w-7 h-7" />,
     title: "WhatsApp",
-    value: "+977-9851226669",
-    href: "https://wa.me/9779851226669",
+    value: "+977-9851071848",
+    href: "https://wa.me/9779851071848",
     desc: "Send photos and details for an instant quote via WhatsApp.",
     color: "from-green-500 to-emerald-500",
   },
@@ -42,7 +42,7 @@ const contactMethods = [
 const faqs = [
   {
     q: "How do I get a free moving quote?",
-    a: "Call us at +977-9851226669, fill out the form on this page, or WhatsApp us with details of your move. We'll provide an instant, transparent quote with no hidden charges.",
+    a: "Call us at +977-9851071848, fill out the form on this page, or WhatsApp us with details of your move. We'll provide an instant, transparent quote with no hidden charges.",
   },
   {
     q: "How quickly can you start my move?",
@@ -126,7 +126,7 @@ export default function ContactContent() {
               {/* Quick contact actions */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:+9779851226669"
+                  href="tel:+9779851071848"
                   className="group flex items-center gap-3 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 px-6 py-4 text-white font-semibold shadow-lg shadow-red-500/25 hover:shadow-red-500/40 hover:scale-[1.02] transition-all duration-300"
                 >
                   <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 group-hover:bg-white/30 transition">
@@ -134,11 +134,11 @@ export default function ContactContent() {
                   </span>
                   <div className="text-left">
                     <span className="block text-xs text-white/70 font-normal">Call Now</span>
-                    <span className="block">+977-9851226669</span>
+                    <span className="block">+977-9851071848</span>
                   </div>
                 </a>
                 <a
-                  href="https://wa.me/9779851226669"
+                  href="https://wa.me/9779851071848"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm px-6 py-4 text-white font-semibold hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] transition-all duration-300"
@@ -401,28 +401,28 @@ export default function ContactContent() {
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
               Find Our Office
             </h2>
-            <p className="mt-3 text-gray-600">Visit us at Kalanki, Kathmandu — or let us come to you for a free assessment.</p>
+            <p className="mt-3 text-gray-600">Visit us at Baluwatar, Kathmandu — or let us come to you for a free assessment.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
             {/* Map placeholder */}
             <div className="rounded-3xl overflow-hidden border border-gray-100 shadow-xl min-h-[350px] bg-gray-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8!2d85.28!3d27.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKalanki%2C+Kathmandu!5e0!3m2!1sen!2snp!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.138301174581!2d85.32911567599639!3d27.71301352524363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19213035f4eb%3A0x732f74374574a494!2sBaluwatar%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1685634796533!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "350px" }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Namaste Packers and Movers office location in Kalanki, Kathmandu"
+                title="Sajilo Packers and Movers office location in Baluwatar, Kathmandu"
               />
             </div>
 
             {/* Office info */}
             <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-8 md:p-10 flex flex-col justify-center space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Namaste Packers and Movers</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Sajilo Packers and Movers</h3>
                 <p className="text-gray-500">Head Office</p>
               </div>
 
@@ -430,21 +430,21 @@ export default function ContactContent() {
                 <div className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-xl text-gray-400 mt-1" />
                   <div>
-                    <p className="font-semibold">Kalanki, Kathmandu-32</p>
+                    <p className="font-semibold">Baluwatar, Kathmandu</p>
                     <p className="text-gray-500 text-sm">Nepal</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <FaPhoneAlt className="text-xl text-gray-400 mt-1" />
                   <div>
-                    <a href="tel:+9779851226669" className="font-semibold text-red-600 hover:underline">+977-9851226669</a>
+                    <a href="tel:+9779851071848" className="font-semibold text-red-600 hover:underline">+977-9851071848</a>
                     <p className="text-gray-500 text-sm">Available 24 hours, 7 days</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <FaEnvelope className="text-xl text-gray-400 mt-1" />
                   <div>
-                    <a href="mailto:Namastepackersnepal@gmail.com" className="font-semibold text-red-600 hover:underline">Namastepackersnepal@gmail.com</a>
+                    <a href="mailto:Padamsunchiuri95@gmail.com" className="font-semibold text-red-600 hover:underline">Padamsunchiuri95@gmail.com</a>
                     <p className="text-gray-500 text-sm">Response within 1 hour</p>
                   </div>
                 </div>
@@ -458,10 +458,10 @@ export default function ContactContent() {
               </address>
 
               <div className="flex gap-3 pt-2">
-                <a href="tel:+9779851226669" className="flex-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
+                <a href="tel:+9779851071848" className="flex-1 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
                   <FaPhoneAlt className="inline-block mr-2" /> Call Now
                 </a>
-                <a href="https://wa.me/9779851226669" target="_blank" rel="noopener noreferrer" className="flex-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
+                <a href="https://wa.me/9779851071848" target="_blank" rel="noopener noreferrer" className="flex-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 text-white font-semibold text-center hover:opacity-90 transition shadow-lg">
                   <FaWhatsapp className="inline-block mr-2" /> WhatsApp
                 </a>
               </div>

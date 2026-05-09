@@ -9,14 +9,14 @@ const galleryImages = [
   // { src: "/img1.jpg", alt: "Professional packing team preparing household items in Kathmandu", category: "Packing" },
   { src: "/img2.jpg", alt: "Office shifting and corporate relocation at Dharan", category: "Dharan Transport" },
   { src: "/img3.jpg", alt: "Safe vehicle transport across Nepal", category: "Kathmandu Transport" },
-  // { src: "/Hero.jpg", alt: "Namaste Packers and Movers fleet ready for moving services", category: "Fleet" },
+  // { src: "/Hero.jpg", alt: "Sajilo Packers and Movers fleet ready for moving services", category: "Fleet" },
   { src: "/img5.jpg", alt: "Customer relations team coordinating room shifting in Janakpur", category: "Janakpur Transport" },
   { src: "/img6.jpg", alt: "Room shifting service — careful loading of furniture at Hetauda", category: "Hetauda Transport" },
   { src: "/corporateMoving.jpg", alt: "Corporate moving and large-scale office relocation", category: "Office Shifting" },
   { src: "/ResidentialShifting.jpg", alt: "Residential shifting — home moving in Kathmandu Valley", category: "Room Shifting" },
   { src: "/vehicleAndBikeTransport.jpg", alt: "Bike and vehicle transport service with GPS tracking", category: "Vehicle Transport" },
   { src: "/PackingAndBoxing.jpg", alt: "Premium packing materials and boxing services", category: "Packing" },
-  { src: "/hero1.jpg", alt: "Namaste Packers moving truck on the highway", category: "Fleet" },
+  { src: "/hero1.jpg", alt: "Sajilo Packers moving truck on the highway", category: "Fleet" },
   // { src: "/InternationalMoving.jpg", alt: "International moving and relocation services from Nepal", category: "Fleet" },
 ];
 
@@ -400,7 +400,7 @@ export default function GalleryContent() {
                 { icon: <FaBoxOpen />, title: "Premium Packing", desc: "Every item wrapped with bubble wrap, foam, and corrugated boxes." },
                 { icon: <FaTruck />, title: "GPS-Tracked Fleet", desc: "Track your belongings in real-time across Nepal." },
                 { icon: <FaShieldAlt />, title: "Zero-Damage Guarantee", desc: "Professional handling ensures your items arrive safe." },
-                { icon: <FaClock />, title: "On-Time Delivery", desc: "We arrive on time, load Namaste, and deliver on schedule." },
+                { icon: <FaClock />, title: "On-Time Delivery", desc: "We arrive on time, load Sajilo, and deliver on schedule." },
               ]).map((item) => (
                 <div key={item.title} className="flex items-start gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group">
                   <span className="text-3xl flex-shrink-0 text-orange-400">{item.icon}</span>
@@ -472,7 +472,7 @@ export default function GalleryContent() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {([
-              { value: "500+", label: "Photos Captured", icon: <FaCamera /> },
+              { value: "100+", label: "Photos Captured", icon: <FaCamera /> },
               { value: "100+", label: "Videos Recorded", icon: <FaVideo /> },
               { value: "15K+", label: "Happy Customers", icon: <FaSmile /> },
               { value: "20+", label: "Cities Covered", icon: <FaMapMarkerAlt /> },
@@ -519,8 +519,8 @@ export default function GalleryContent() {
             <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
+            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851071848
             </a>
           </div>
         </div>

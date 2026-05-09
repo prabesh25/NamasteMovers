@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.Namastepackersandmovers.com" />
+        <link rel="canonical" href="https://www.Sajilopackersandmovers.com" />
         <meta name="geo.region" content="NP" />
         <meta name="geo.placename" content="Kathmandu" />
         <meta name="geo.position" content="27.6933;85.2812" />
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/9779851226669?text=Hello%2C%20I%20need%20a%20moving%20quote"
+          href="https://wa.me/9779851071848?text=Hello%2C%20I%20need%20a%20moving%20quote"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with us on WhatsApp"

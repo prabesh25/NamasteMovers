@@ -359,7 +359,7 @@ export default function RecentDeliveries() {
                       Get a Free Quote
                     </a>
                     <a
-                      href="tel:+9779851226669"
+                      href="tel:+9779851071848"
                       className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition"
                     >
                       📞 Call Now
@@ -412,7 +412,7 @@ export default function RecentDeliveries() {
             </h2>
 
             <p className="mt-4 text-base md:text-lg leading-relaxed text-slate-600">
-              See how Namaste Packers and Movers delivers safe, affordable, and on-time room shifting, office shifting, vehicle transport, and packing services across Nepal. Get a free quote for your move today.
+              See how Sajilo Packers and Movers delivers safe, affordable, and on-time room shifting, office shifting, vehicle transport, and packing services across Nepal. Get a free quote for your move today.
             </p>
 
             {/* Trust chips */}

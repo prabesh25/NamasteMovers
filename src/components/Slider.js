@@ -124,7 +124,7 @@
 import React, { useEffect, useRef } from 'react';
 
 const images = [
-  { src: '/img2.jpg', alt: 'Room shifting service in Kathmandu by Namaste Packers and Movers' },
+  { src: '/img2.jpg', alt: 'Room shifting service in Kathmandu by Sajilo Packers and Movers' },
   { src: '/img3.jpg', alt: 'Office shifting and corporate moving in Nepal' },
   { src: '/img4.webp', alt: 'Professional packing and boxing services in Pokhara' },
   { src: '/img5.jpg', alt: 'Vehicle and bike transport across Nepal' },

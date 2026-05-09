@@ -96,7 +96,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/mainLogo.png"
-            alt="Namaste Packers & Movers"
+            alt="Sajilo Packers & Movers"
             width={150}
             height={0}
             className="object-cover"

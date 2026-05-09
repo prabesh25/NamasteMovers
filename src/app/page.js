@@ -77,11 +77,11 @@ import ServicesWithGallery from "@/components/Slider";
 
 export const metadata = {
   title:
-    "Namaste Packers and Movers | #1 Room Shifting & Office Shifting in Nepal",
+    "Sajilo Packers and Movers | #1 Room Shifting & Office Shifting in Nepal",
   description:
-    "Namaste Packers and Movers – Nepal's top-rated moving company. Affordable room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, and packing services in Kathmandu, Pokhara, Butwal, Biratnagar & across Nepal. Call 24/7: +977-9851226669.",
+    "Sajilo Packers and Movers – Nepal's top-rated moving company. Affordable room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, and packing services in Kathmandu, Pokhara, Butwal, Biratnagar & across Nepal. Call 24/7: +977-9851071848.",
   keywords: [
-    "Namaste packers and movers",
+    "Sajilo packers and movers",
     "packers and movers nepal",
     "room shifting kathmandu",
     "office shifting kathmandu",
@@ -99,14 +99,14 @@ export const metadata = {
     "packers and movers in pokhara",
   ],
   alternates: {
-    canonical: "https://www.Namastepackersandmovers.com",
+    canonical: "https://www.Sajilopackersandmovers.com",
   },
   openGraph: {
     title:
-      "Namaste Packers and Movers | Room Shifting & Office Shifting Nepal",
+      "Sajilo Packers and Movers | Room Shifting & Office Shifting Nepal",
     description:
       "Nepal's most trusted packers and movers. Room shifting, office shifting, vehicle transport, and packing services across Kathmandu, Pokhara, Butwal & all Nepal.",
-    url: "https://www.Namastepackersandmovers.com",
+    url: "https://www.Sajilopackersandmovers.com",
     type: "website",
   },
 };

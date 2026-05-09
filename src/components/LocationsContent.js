@@ -11,7 +11,7 @@ const locations = [
     img: "/img3.jpg",
     desc: "Our headquarters — same-day room shifting, office shifting, and residential moving with local experts for high-rise apartment moves.",
     services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "Storage"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Lalitpur",
@@ -19,7 +19,7 @@ const locations = [
     img: "/img4.webp",
     desc: "Room shifting and office shifting in Lalitpur with weekend and night slots to reduce traffic delays. Expert teams for Patan and surrounding areas.",
     services: ["Room Shifting", "Office Shifting", "Packing", "Residential Shifting"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Bhaktapur",
@@ -27,7 +27,7 @@ const locations = [
     img: "/img7.webp",
     desc: "Packers and movers in Bhaktapur specializing in apartment moves, villa relocations, and residential shifting in heritage areas.",
     services: ["Room Shifting", "Residential Shifting", "Packing", "Furniture Moving"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Pokhara",
@@ -35,7 +35,7 @@ const locations = [
     img: "/img11.jpg",
     desc: "Professional packers and movers in Pokhara for house shifting, office shifting, and packing services. Tourist-area aware crews available.",
     services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "International Moving"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Butwal",
@@ -43,7 +43,7 @@ const locations = [
     img: "/img1.jpg",
     desc: "Professional office shifting and room shifting in Butwal with flexible scheduling and affordable pricing. Serving Lumbini province.",
     services: ["Room Shifting", "Office Shifting", "Packing", "Vehicle Transport"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Biratnagar",
@@ -51,7 +51,7 @@ const locations = [
     img: "/img13.png",
     desc: "Reliable packers and movers in Biratnagar for intercity moves, vehicle transport, and corporate relocation across eastern Nepal.",
     services: ["Room Shifting", "Corporate Moving", "Vehicle Transport", "Packing"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Dharan",
@@ -59,7 +59,7 @@ const locations = [
     img: "/img2.jpg",
     desc: "Efficient room shifting, office shifting, and furniture moving services in Dharan with careful loading and unloading by trained teams.",
     services: ["Room Shifting", "Office Shifting", "Furniture Moving", "Packing"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Chitwan",
@@ -67,7 +67,7 @@ const locations = [
     img: "/img12.jpg",
     desc: "Trusted packers and movers in Chitwan for local and intercity house shifting, vehicle transport, and corporate moving solutions.",
     services: ["Room Shifting", "Residential Shifting", "Vehicle Transport", "Corporate Moving"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Hetauda",
@@ -75,7 +75,7 @@ const locations = [
     img: "/img6.jpg",
     desc: "Affordable room shifting and office shifting in Hetauda with expert planning, safe packing, and on-time delivery.",
     services: ["Room Shifting", "Office Shifting", "Packing", "Residential Shifting"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Janakpur",
@@ -83,7 +83,7 @@ const locations = [
     img: "/img5.jpg",
     desc: "Trusted intercity moving, room shifting, and packing services connecting Janakpur to Kathmandu and all major cities in Nepal.",
     services: ["Room Shifting", "Intercity Moving", "Packing", "Vehicle Transport"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Nepalgunj",
@@ -91,7 +91,7 @@ const locations = [
     img: "/img14.webp",
     desc: "Mid-western Nepal's go-to moving company. Room shifting, office shifting, and vehicle transport with local expertise.",
     services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "Packing"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
   {
     city: "Dhangadhi",
@@ -99,7 +99,7 @@ const locations = [
     img: "/img16.jpg",
     desc: "Far-western Nepal covered. Professional room shifting, packing, and intercity moving services from Dhangadhi.",
     services: ["Room Shifting", "Intercity Moving", "Packing", "Office Shifting"],
-    phone: "+977-9851226669",
+    phone: "+977-9851071848",
   },
 ];
 
@@ -202,7 +202,7 @@ export default function LocationsContent() {
                 <div className="aspect-[4/3] relative">
                   <img
                     src={loc.img}
-                    alt={`Namaste Packers and Movers in ${loc.city}, Nepal`}
+                    alt={`Sajilo Packers and Movers in ${loc.city}, Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -314,10 +314,10 @@ export default function LocationsContent() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Every city has different roads, building types, and challenges. That&apos;s why <strong className="text-gray-900">Namaste Packers and Movers</strong> maintains trained local teams in every branch office.
+                  Every city has different roads, building types, and challenges. That&apos;s why <strong className="text-gray-900">Sajilo Packers and Movers</strong> maintains trained local teams in every branch office.
                 </p>
                 <p>
-                  Our <strong className="text-gray-900">Kathmandu team</strong> knows every narrow galli and high-rise layout. Our <strong className="text-gray-900">Pokhara crew</strong> navigates lakeside streets expertly. Local knowledge means Namasteer, safer, and smoother moves.
+                  Our <strong className="text-gray-900">Kathmandu team</strong> knows every narrow galli and high-rise layout. Our <strong className="text-gray-900">Pokhara crew</strong> navigates lakeside streets expertly. Local knowledge means Sajiloer, safer, and smoother moves.
                 </p>
               </div>
 
@@ -345,7 +345,7 @@ export default function LocationsContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Namaste Packers local team in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <img src="/img1.jpg" alt="Sajilo Packers local team in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <img src="/img6.jpg" alt="Moving truck in Nepal" className="w-full h-64 object-cover" loading="lazy" />
@@ -389,8 +389,8 @@ export default function LocationsContent() {
             <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851226669
+            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+              <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851071848
             </a>
           </div>
         </div>

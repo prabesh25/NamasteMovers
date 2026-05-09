@@ -10,11 +10,11 @@ export default function FAQ() {
     () => [
       {
         q: 'How much does room shifting cost in Kathmandu?',
-        a: 'Room shifting costs in Kathmandu vary based on the volume of items, distance, and floor level. Namaste Packers and Movers offers affordable room shifting starting from Rs 2,000. Call +977-9851226669 for a free estimate tailored to your move.',
+        a: 'Room shifting costs in Kathmandu vary based on the volume of items, distance, and floor level. Sajilo Packers and Movers offers affordable room shifting starting from Rs 2,000. Call +977-9851071848 for a free estimate tailored to your move.',
       },
       {
         q: 'Do you provide office shifting services in Pokhara and Butwal?',
-        a: 'Yes! Namaste Packers and Movers provides professional office shifting services in Pokhara, Butwal, and all major cities across Nepal. We handle IT equipment, furniture, and documents with care to ensure minimal downtime for your business.',
+        a: 'Yes! Sajilo Packers and Movers provides professional office shifting services in Pokhara, Butwal, and all major cities across Nepal. We handle IT equipment, furniture, and documents with care to ensure minimal downtime for your business.',
       },
       {
         q: 'Do you handle packing materials for room and office shifting?',
@@ -22,7 +22,7 @@ export default function FAQ() {
       },
       {
         q: 'Can you transport vehicles and bikes across Nepal?',
-        a: 'Absolutely. Namaste Packers and Movers offers secure vehicle and bike transport across Nepal with GPS tracking, safe carrier loading, and door-to-door delivery. We transport cars, motorcycles, and scooters between Kathmandu, Pokhara, Butwal, Biratnagar, and all cities.',
+        a: 'Absolutely. Sajilo Packers and Movers offers secure vehicle and bike transport across Nepal with GPS tracking, safe carrier loading, and door-to-door delivery. We transport cars, motorcycles, and scooters between Kathmandu, Pokhara, Butwal, Biratnagar, and all cities.',
       },
       {
         q: 'Can you move on weekends or at night in Kathmandu?',
@@ -33,12 +33,12 @@ export default function FAQ() {
         a: 'We offer damage protection options and comprehensive inventory tracking for all our moving services. Whether it\'s room shifting, office shifting, or vehicle transport, your belongings are protected throughout the move.',
       },
       {
-        q: 'How Namaste can I book a move with Namaste Packers and Movers?',
-        a: 'You can call and confirm your booking in minutes. Same-day room shifting and office shifting slots are often available in Kathmandu Valley. For intercity moves, we recommend booking 1-2 days in advance. Call 24/7: +977-9851226669.',
+        q: 'How Sajilo can I book a move with Sajilo Packers and Movers?',
+        a: 'You can call and confirm your booking in minutes. Same-day room shifting and office shifting slots are often available in Kathmandu Valley. For intercity moves, we recommend booking 1-2 days in advance. Call 24/7: +977-9851071848.',
       },
       {
         q: 'Which cities in Nepal do you serve?',
-        a: 'Namaste Packers and Movers serves all major cities in Nepal including Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, Janakpur, Narayanghat, Bhairahawa, Nepalgunj, and Dhangadhi.',
+        a: 'Sajilo Packers and Movers serves all major cities in Nepal including Kathmandu, Lalitpur, Bhaktapur, Pokhara, Butwal, Biratnagar, Dharan, Chitwan, Hetauda, Janakpur, Narayanghat, Bhairahawa, Nepalgunj, and Dhangadhi.',
       },
     ],
     []
@@ -82,7 +82,7 @@ export default function FAQ() {
                   <div className="aspect-[4/5] w-full bg-black/10">
                     <img
                       src={imageSrc}
-                      alt="Frequently Asked Questions about Room Shifting, Office Shifting and Moving Services in Nepal - Namaste Packers and Movers"
+                      alt="Frequently Asked Questions about Room Shifting, Office Shifting and Moving Services in Nepal - Sajilo Packers and Movers"
                       className="h-full w-full object-contain"
                       loading="lazy"
                       decoding="async"

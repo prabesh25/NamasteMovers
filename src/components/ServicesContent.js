@@ -10,7 +10,7 @@ const services = [
     icon: (<svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" /></svg>),
     color: "from-red-500 to-orange-500",
     description:
-      "Need to shift your room in Kathmandu, Pokhara, Butwal, or anywhere in Nepal? Namaste Packers and Movers provides safe, affordable, and professional room shifting services with careful packing, loading, transport, and unpacking at your new location.",
+      "Need to shift your room in Kathmandu, Pokhara, Butwal, or anywhere in Nepal? Sajilo Packers and Movers provides safe, affordable, and professional room shifting services with careful packing, loading, transport, and unpacking at your new location.",
     features: [
       "Safe packing of all belongings",
       "Careful loading & unloading",
@@ -215,7 +215,7 @@ export default function ServicesContent() {
               </h1>
 
               <p className="text-gray-500 text-lg leading-relaxed max-w-md">
-                8 specialized services — from room shifting to international moving. Safe, Namaste, and affordable.
+                8 specialized services — from room shifting to international moving. Safe, Sajilo, and affordable.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -225,7 +225,7 @@ export default function ServicesContent() {
                 >
                   Get Free Quote →
                 </Link>
-                <a href="tel:+9779851226669" className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-5 py-3 text-gray-700 font-semibold hover:shadow-md transition-all text-sm">
+                <a href="tel:+9779851071848" className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-5 py-3 text-gray-700 font-semibold hover:shadow-md transition-all text-sm">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   Call 24/7
                 </a>
@@ -292,7 +292,7 @@ export default function ServicesContent() {
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group">
                     <img
                       src={service.img}
-                      alt={`${service.name} service in Nepal - Namaste Packers and Movers`}
+                      alt={`${service.name} service in Nepal - Sajilo Packers and Movers`}
                       className="w-full h-72 md:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
@@ -398,7 +398,7 @@ export default function ServicesContent() {
                 Nepal&apos;s Most Trusted Moving Company
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                With <strong className="text-gray-900">15+ years</strong>, <strong className="text-gray-900">15,000+ successful moves</strong>, and <strong className="text-gray-900">500+ trained professionals</strong>, Namaste Packers and Movers delivers safe, affordable, and on-time moving services across Nepal.
+                With <strong className="text-gray-900">15+ years</strong>, <strong className="text-gray-900">15,000+ successful moves</strong>, and <strong className="text-gray-900">500+ trained professionals</strong>, Sajilo Packers and Movers delivers safe, affordable, and on-time moving services across Nepal.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -460,8 +460,8 @@ export default function ServicesContent() {
             <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851226669" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
-              📞 Call: +977-9851226669
+            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+              📞 Call: +977-9851071848
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
-export const siteUrl = "https://www.Namastepackersandmovers.com";
-export const siteName = "Namaste Packers and Movers";
-export const sitePhone = "+977-9851226669";
-export const siteEmail = "Namastepackersnepal@gmail.com";
+export const siteUrl = "https://www.Sajilopackersandmovers.com";
+export const siteName = "Sajilo Packers and Movers";
+export const sitePhone = "+977-9851071848";
+export const siteEmail = "Padamsunchiuri95@gmail.com";
 export const siteAddress = {
   street: "Kalanki",
   city: "Kathmandu",
@@ -15,7 +15,7 @@ export const primaryKeywords = [
   "packers and movers in nepal",
   "packers and movers in kathmandu",
   "best packers and movers nepal",
-  "Namaste packers and movers",
+  "Sajilo packers and movers",
   "room shifting service kathmandu",
   "room shifting service nepal",
   "office shifting service kathmandu",
@@ -74,11 +74,11 @@ export const defaultMetadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "Namaste Packers and Movers | #1 Room Shifting & Office Shifting Service in Nepal",
-    template: "%s | Namaste Packers and Movers Nepal",
+      "Sajilo Packers and Movers | #1 Room Shifting & Office Shifting Service in Nepal",
+    template: "%s | Sajilo Packers and Movers Nepal",
   },
   description:
-    "Namaste Packers and Movers is Nepal's most trusted moving company. We offer room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, and packing services in Kathmandu, Pokhara, Butwal, Biratnagar & across Nepal. Call 24/7: +977-9851226669.",
+    "Sajilo Packers and Movers is Nepal's most trusted moving company. We offer room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, and packing services in Kathmandu, Pokhara, Butwal, Biratnagar & across Nepal. Call 24/7: +977-9851071848.",
   keywords: [...primaryKeywords, ...locationKeywords, ...serviceKeywords],
   authors: [{ name: siteName, url: siteUrl }],
   creator: siteName,
@@ -90,7 +90,7 @@ export const defaultMetadata = {
   },
   openGraph: {
     title:
-      "Namaste Packers and Movers | #1 Room Shifting & Office Shifting Service in Nepal",
+      "Sajilo Packers and Movers | #1 Room Shifting & Office Shifting Service in Nepal",
     description:
       "Nepal's most trusted movers. Room shifting, office shifting, vehicle transport & packing services across Kathmandu, Pokhara, Butwal & all Nepal. Call 24/7.",
     url: siteUrl,
@@ -102,14 +102,14 @@ export const defaultMetadata = {
         url: `${siteUrl}/images/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Namaste Packers and Movers - Room Shifting & Office Shifting in Nepal",
+        alt: "Sajilo Packers and Movers - Room Shifting & Office Shifting in Nepal",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Namaste Packers and Movers | Room & Office Shifting Nepal",
+      "Sajilo Packers and Movers | Room & Office Shifting Nepal",
     description:
       "Professional room shifting, office shifting, vehicle transport & packing in Kathmandu, Pokhara, Butwal & all Nepal. 24/7 support.",
     images: [`${siteUrl}/images/og-image.jpg`],
@@ -173,12 +173,12 @@ export function generateLocalBusinessSchema() {
       closes: "23:59",
     },
     sameAs: [
-      "https://www.facebook.com/Namastepackersandmovers",
-      "https://www.instagram.com/Namastepackersandmovers",
+      "https://www.facebook.com/Sajilopackersandmovers",
+      "https://www.instagram.com/Sajilopackersandmovers",
     ],
     priceRange: "$$",
     description:
-      "Namaste Packers and Movers provides professional room shifting, office shifting, residential moving, corporate moving, vehicle & bike transport, packing & boxing services in Kathmandu, Pokhara, Butwal, Biratnagar and throughout Nepal.",
+      "Sajilo Packers and Movers provides professional room shifting, office shifting, residential moving, corporate moving, vehicle & bike transport, packing & boxing services in Kathmandu, Pokhara, Butwal, Biratnagar and throughout Nepal.",
     areaServed: [
       { "@type": "City", name: "Kathmandu" },
       { "@type": "City", name: "Lalitpur" },
