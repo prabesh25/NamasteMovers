@@ -72,7 +72,7 @@
 //               height: '65vh',
 //             }}
 //           >
-//             <img
+//             <Image width={800} height={600} 
 //               src={src}
 //               alt={`Gallery image ${i + 1}`}
 //               className="w-full h-full object-cover block"
@@ -120,6 +120,7 @@
 
 
 'use client';
+import Image from "next/image";
 
 import React, { useEffect, useRef } from 'react';
 
@@ -197,7 +198,7 @@ export default function InfiniteGallerySlider() {
             key={`${direction}-${i}`}
             className="flex-shrink-0 rounded-xl overflow-hidden w-[75vw] h-[35vh] sm:w-[45vw] sm:h-[40vh] md:w-[min(47vw,650px)] md:h-[65vh]"
           >
-            <img
+            <Image width={800} height={600} 
               src={img.src}
               alt={img.alt}
               className="w-full h-full object-cover block"

@@ -1,5 +1,6 @@
 
 'use client';
+import Image from "next/image";
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
@@ -50,7 +51,7 @@ export default function Services() {
               {/* Image */}
               <div className="relative overflow-hidden rounded-t-3xl">
                 <div className="aspect-[16/10] w-full bg-slate-100">
-                  <img
+                  <Image width={800} height={600} 
                     src={s.img}
                     alt={`${s.title} Service in Nepal - Sajilo Packers and Movers`}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.06]"

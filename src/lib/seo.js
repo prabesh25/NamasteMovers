@@ -128,6 +128,12 @@ export const defaultMetadata = {
   alternates: {
     canonical: siteUrl,
   },
+  other: {
+    "geo.region": "NP",
+    "geo.placename": "Kathmandu",
+    "geo.position": "27.6933;85.2812",
+    "ICBM": "27.6933, 85.2812",
+  },
   verification: {
     // Add your Google Search Console verification code here
     // google: "your-google-verification-code",
