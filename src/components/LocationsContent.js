@@ -1,8 +1,19 @@
 "use client";
+import Image from "next/image";
+
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaMapMarkerAlt, FaCheckCircle, FaPhoneAlt, FaTruck, FaRoute, FaBuilding, FaBolt, FaUsers } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaCheckCircle,
+  FaPhoneAlt,
+  FaTruck,
+  FaRoute,
+  FaBuilding,
+  FaBolt,
+  FaUsers,
+} from "react-icons/fa";
 
 const locations = [
   {
@@ -10,7 +21,12 @@ const locations = [
     area: "New Baneshwor",
     img: "/img3.jpg",
     desc: "Our headquarters — same-day room shifting, office shifting, and residential moving with local experts for high-rise apartment moves.",
-    services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "Storage"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Vehicle Transport",
+      "Storage",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -18,7 +34,12 @@ const locations = [
     area: "Satdobato",
     img: "/img4.webp",
     desc: "Room shifting and office shifting in Lalitpur with weekend and night slots to reduce traffic delays. Expert teams for Patan and surrounding areas.",
-    services: ["Room Shifting", "Office Shifting", "Packing", "Residential Shifting"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Packing",
+      "Residential Shifting",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -26,7 +47,12 @@ const locations = [
     area: "Sallaghari",
     img: "/img7.webp",
     desc: "Packers and movers in Bhaktapur specializing in apartment moves, villa relocations, and residential shifting in heritage areas.",
-    services: ["Room Shifting", "Residential Shifting", "Packing", "Furniture Moving"],
+    services: [
+      "Room Shifting",
+      "Residential Shifting",
+      "Packing",
+      "Furniture Moving",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -34,7 +60,12 @@ const locations = [
     area: "Hallanchowk",
     img: "/img11.jpg",
     desc: "Professional packers and movers in Pokhara for house shifting, office shifting, and packing services. Tourist-area aware crews available.",
-    services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "International Moving"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Vehicle Transport",
+      "International Moving",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -42,7 +73,12 @@ const locations = [
     area: "Traffic Chowk",
     img: "/img1.jpg",
     desc: "Professional office shifting and room shifting in Butwal with flexible scheduling and affordable pricing. Serving Lumbini province.",
-    services: ["Room Shifting", "Office Shifting", "Packing", "Vehicle Transport"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Packing",
+      "Vehicle Transport",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -50,7 +86,12 @@ const locations = [
     area: "Main Road",
     img: "/img13.png",
     desc: "Reliable packers and movers in Biratnagar for intercity moves, vehicle transport, and corporate relocation across eastern Nepal.",
-    services: ["Room Shifting", "Corporate Moving", "Vehicle Transport", "Packing"],
+    services: [
+      "Room Shifting",
+      "Corporate Moving",
+      "Vehicle Transport",
+      "Packing",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -58,7 +99,12 @@ const locations = [
     area: "Putali Line",
     img: "/img2.jpg",
     desc: "Efficient room shifting, office shifting, and furniture moving services in Dharan with careful loading and unloading by trained teams.",
-    services: ["Room Shifting", "Office Shifting", "Furniture Moving", "Packing"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Furniture Moving",
+      "Packing",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -66,7 +112,12 @@ const locations = [
     area: "Narayanghat",
     img: "/img12.jpg",
     desc: "Trusted packers and movers in Chitwan for local and intercity house shifting, vehicle transport, and corporate moving solutions.",
-    services: ["Room Shifting", "Residential Shifting", "Vehicle Transport", "Corporate Moving"],
+    services: [
+      "Room Shifting",
+      "Residential Shifting",
+      "Vehicle Transport",
+      "Corporate Moving",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -74,7 +125,12 @@ const locations = [
     area: "Bus Park Area",
     img: "/img6.jpg",
     desc: "Affordable room shifting and office shifting in Hetauda with expert planning, safe packing, and on-time delivery.",
-    services: ["Room Shifting", "Office Shifting", "Packing", "Residential Shifting"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Packing",
+      "Residential Shifting",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -82,7 +138,12 @@ const locations = [
     area: "Station Road",
     img: "/img5.jpg",
     desc: "Trusted intercity moving, room shifting, and packing services connecting Janakpur to Kathmandu and all major cities in Nepal.",
-    services: ["Room Shifting", "Intercity Moving", "Packing", "Vehicle Transport"],
+    services: [
+      "Room Shifting",
+      "Intercity Moving",
+      "Packing",
+      "Vehicle Transport",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -90,7 +151,12 @@ const locations = [
     area: "Surkhet Road",
     img: "/img14.webp",
     desc: "Mid-western Nepal's go-to moving company. Room shifting, office shifting, and vehicle transport with local expertise.",
-    services: ["Room Shifting", "Office Shifting", "Vehicle Transport", "Packing"],
+    services: [
+      "Room Shifting",
+      "Office Shifting",
+      "Vehicle Transport",
+      "Packing",
+    ],
     phone: "+977-9851071848",
   },
   {
@@ -98,7 +164,12 @@ const locations = [
     area: "Main Bazaar",
     img: "/img16.jpg",
     desc: "Far-western Nepal covered. Professional room shifting, packing, and intercity moving services from Dhangadhi.",
-    services: ["Room Shifting", "Intercity Moving", "Packing", "Office Shifting"],
+    services: [
+      "Room Shifting",
+      "Intercity Moving",
+      "Packing",
+      "Office Shifting",
+    ],
     phone: "+977-9851071848",
   },
 ];
@@ -183,7 +254,8 @@ export default function LocationsContent() {
               Find Us in Your City
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Click on any city to see the services available at that branch and get connected with our local team.
+              Click on any city to see the services available at that branch and
+              get connected with our local team.
             </p>
           </div>
 
@@ -200,7 +272,7 @@ export default function LocationsContent() {
               >
                 {/* City Image */}
                 <div className="aspect-[4/3] relative">
-                  <img
+                  <Image width={800} height={600} 
                     src={loc.img}
                     alt={`Sajilo Packers and Movers in ${loc.city}, Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -208,7 +280,9 @@ export default function LocationsContent() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-white font-bold text-xl drop-shadow">{loc.city}</h3>
+                    <h3 className="text-white font-bold text-xl drop-shadow">
+                      {loc.city}
+                    </h3>
                     <p className="text-white/70 text-sm">{loc.area}</p>
                   </div>
                   <div className="absolute top-3 right-3">
@@ -219,11 +293,16 @@ export default function LocationsContent() {
                 </div>
 
                 {/* Expanded content */}
-                <div className={`transition-all duration-300 overflow-hidden ${activeCity === idx ? "max-h-96 p-5" : "max-h-0 p-0"}`}>
+                <div
+                  className={`transition-all duration-300 overflow-hidden ${activeCity === idx ? "max-h-96 p-5" : "max-h-0 p-0"}`}
+                >
                   <p className="text-gray-600 text-sm mb-3">{loc.desc}</p>
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {loc.services.map((s) => (
-                      <span key={s} className="inline-block rounded-full bg-orange-50 border border-orange-100 px-2.5 py-1 text-[11px] font-semibold text-orange-700">
+                      <span
+                        key={s}
+                        className="inline-block rounded-full bg-orange-50 border border-orange-100 px-2.5 py-1 text-[11px] font-semibold text-orange-700"
+                      >
                         {s}
                       </span>
                     ))}
@@ -255,7 +334,8 @@ export default function LocationsContent() {
               Popular Moving Routes
             </h2>
             <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-              Our most requested intercity moving routes across Nepal. Safe, tracked, and on-time — every single move.
+              Our most requested intercity moving routes across Nepal. Safe,
+              tracked, and on-time — every single move.
             </p>
           </div>
 
@@ -279,15 +359,30 @@ export default function LocationsContent() {
                   <span className="text-white font-bold">{route.from}</span>
                   <div className="flex-1 flex items-center gap-1">
                     <div className="flex-1 h-px bg-gradient-to-r from-red-500/60 to-orange-500/60" />
-                    <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      className="w-4 h-4 text-orange-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </div>
                   <span className="text-white font-bold">{route.to}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">Est. {route.time}</span>
-                  <Link href="/contact" className="text-orange-400 text-sm font-semibold hover:text-orange-300 transition">
+                  <span className="text-gray-400 text-sm">
+                    Est. {route.time}
+                  </span>
+                  <Link
+                    href="/contact"
+                    className="text-orange-400 text-sm font-semibold hover:text-orange-300 transition"
+                  >
                     Get Quote →
                   </Link>
                 </div>
@@ -314,28 +409,47 @@ export default function LocationsContent() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Every city has different roads, building types, and challenges. That&apos;s why <strong className="text-gray-900">Sajilo Packers and Movers</strong> maintains trained local teams in every branch office.
+                  Every city has different roads, building types, and
+                  challenges. That&apos;s why{" "}
+                  <strong className="text-gray-900">
+                    Sajilo Packers and Movers
+                  </strong>{" "}
+                  maintains trained local teams in every branch office.
                 </p>
                 <p>
-                  Our <strong className="text-gray-900">Kathmandu team</strong> knows every narrow galli and high-rise layout. Our <strong className="text-gray-900">Pokhara crew</strong> navigates lakeside streets expertly. Local knowledge means Sajiloer, safer, and smoother moves.
+                  Our <strong className="text-gray-900">Kathmandu team</strong>{" "}
+                  knows every narrow galli and high-rise layout. Our{" "}
+                  <strong className="text-gray-900">Pokhara crew</strong>{" "}
+                  navigates lakeside streets expertly. Local knowledge means
+                  Sajiloer, safer, and smoother moves.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
-                { [
+                {[
                   { icon: <FaRoute />, text: "Local Route Knowledge" },
                   { icon: <FaBuilding />, text: "Building-Specific Plans" },
                   { icon: <FaBolt />, text: "Faster Response Times" },
                   { icon: <FaUsers />, text: "Trusted Local Crews" },
                 ].map((item) => (
-                  <div key={item.text} className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border border-orange-100 shadow-sm">
-                    <span className="text-2xl text-orange-500">{item.icon}</span>
-                    <span className="font-semibold text-gray-800 text-sm">{item.text}</span>
+                  <div
+                    key={item.text}
+                    className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border border-orange-100 shadow-sm"
+                  >
+                    <span className="text-2xl text-orange-500">
+                      {item.icon}
+                    </span>
+                    <span className="font-semibold text-gray-800 text-sm">
+                      {item.text}
+                    </span>
                   </div>
                 ))}
               </div>
 
-              <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition"
+              >
                 Find Your Nearest Branch →
               </Link>
             </div>
@@ -345,18 +459,38 @@ export default function LocationsContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Sajilo Packers local team in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img1.jpg"
+                      alt="Sajilo Packers local team in Kathmandu"
+                      className="w-full h-48 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img6.jpg" alt="Moving truck in Nepal" className="w-full h-64 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img6.jpg"
+                      alt="Moving truck in Nepal"
+                      className="w-full h-64 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img2.jpg" alt="Office shifting in Pokhara" className="w-full h-64 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img2.jpg"
+                      alt="Office shifting in Pokhara"
+                      className="w-full h-64 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img3.jpg" alt="Room shifting in Biratnagar" className="w-full h-48 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img3.jpg"
+                      alt="Room shifting in Biratnagar"
+                      className="w-full h-48 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -368,8 +502,17 @@ export default function LocationsContent() {
       {/* ==================== CTA ==================== */}
       <section className="relative py-24 md:py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-            <source src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4" type="video/mp4" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source
+              src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 to-black/70" />
         </div>
@@ -382,14 +525,21 @@ export default function LocationsContent() {
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-            Get a free estimate for room shifting, office shifting, vehicle transport, or any moving service — no matter where you are in Nepal.
+            Get a free estimate for room shifting, office shifting, vehicle
+            transport, or any moving service — no matter where you are in Nepal.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
+            <Link
+              href="/contact"
+              className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition"
+            >
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+            <a
+              href="tel:+9779851071848"
+              className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition"
+            >
               <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851071848
             </a>
           </div>
