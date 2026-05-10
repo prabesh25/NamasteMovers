@@ -80,7 +80,7 @@ export const metadata = {
   title:
     "Sajilo Packers and Movers | Trusted Moving Company in Kathmandu & Nepal",
   description:
-    "Sajilo Packers and Movers – The best moving company Nepal. Affordable room shifting, home shifting Kathmandu, office shifting, corporate moving, vehicle & bike transport, and packing services across Nepal. Call 24/7: +977-9851071848.",
+    "Trusted packers and movers in Kathmandu, Nepal. Affordable home shifting, office shifting, vehicle transport & packing services. Call 24/7: +977-9851071848",
   keywords: [
     "movers in Kathmandu",
     "moving company Nepal",

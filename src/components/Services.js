@@ -86,7 +86,7 @@ export default function Services() {
                     href="/services"
                     className="inline-flex items-center gap-2 text-sm font-semibold text-red-500 hover:text-red-600 transition"
                   >
-                    Learn more
+                    Explore our {service.title}
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                   </a>
                   <a href="/contact" className="text-xs font-medium text-gray-700 hover:text-red-500 transition">Get quote</a>

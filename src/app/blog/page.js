@@ -120,7 +120,7 @@ export default function BlogPage() {
               href={`/blog/${p.slug}`}
               className="text-red-500 font-semibold text-sm hover:underline"
             >
-              Read more →
+              Read full article: {p.title} →
             </a>
           </article>
         ))}
