@@ -88,7 +88,9 @@ export default function BlogPage() {
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
         <ol className="flex items-center gap-1">
           <li>
-            <a href="/" className="hover:text-red-500 transition">Home</a>
+            <a href="/" className="hover:text-red-500 transition">
+              Home
+            </a>
           </li>
           <li>/</li>
           <li className="text-slate-900 font-semibold">Blog</li>
@@ -100,7 +102,10 @@ export default function BlogPage() {
           Moving Tips & Guides – Room Shifting, Office Shifting & More
         </h1>
         <p className="text-slate-600">
-          Expert guides and tips from <strong>Sajilo Packers and Movers</strong> to make your <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>residential moving</strong>, and <strong>packing</strong> experience in Nepal stress-free and safe.
+          Expert guides and tips from <strong>Sajilo Packers and Movers</strong>{" "}
+          to make your <strong>room shifting</strong>,{" "}
+          <strong>office shifting</strong>, <strong>residential moving</strong>,
+          and <strong>packing</strong> experience in Nepal stress-free and safe.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-3">

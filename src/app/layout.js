@@ -12,6 +12,12 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata = defaultMetadata;
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({ children }) {
   const localBusinessJsonLd = generateLocalBusinessSchema();
   const organizationJsonLd = generateOrganizationSchema();
@@ -19,11 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://www.Sajilopackersandmovers.com" />
-        <meta name="geo.region" content="NP" />
-        <meta name="geo.placename" content="Kathmandu" />
-        <meta name="geo.position" content="27.6933;85.2812" />
-        <meta name="ICBM" content="27.6933, 85.2812" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

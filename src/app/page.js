@@ -1,3 +1,4 @@
+import Image from "next/image";
 // import Image from "next/image";
 
 // export default function Home() {
@@ -77,10 +78,13 @@ import ServicesWithGallery from "@/components/Slider";
 
 export const metadata = {
   title:
-    "Sajilo Packers and Movers | #1 Room Shifting & Office Shifting in Nepal",
+    "Sajilo Packers and Movers | #1 Movers in Kathmandu & Nepal",
   description:
-    "Sajilo Packers and Movers – Nepal's top-rated moving company. Affordable room shifting, office shifting, residential shifting, corporate moving, vehicle & bike transport, and packing services in Kathmandu, Pokhara, Butwal, Biratnagar & across Nepal. Call 24/7: +977-9851071848.",
+    "Sajilo Packers and Movers – The best moving company Nepal. Affordable room shifting, home shifting Kathmandu, office shifting, corporate moving, vehicle & bike transport, and packing services across Nepal. Call 24/7: +977-9851071848.",
   keywords: [
+    "movers in Kathmandu",
+    "moving company Nepal",
+    "home shifting Kathmandu",
     "Sajilo packers and movers",
     "packers and movers nepal",
     "room shifting kathmandu",
@@ -91,11 +95,8 @@ export const metadata = {
     "vehicle transport nepal",
     "bike transport nepal",
     "packing and boxing services nepal",
-    "moving company nepal",
     "best packers and movers kathmandu",
     "movers and packers in nepal",
-    "room shifting in kathmandu",
-    "office shifting in butwal",
     "packers and movers in pokhara",
   ],
   alternates: {
@@ -103,9 +104,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Sajilo Packers and Movers | Room Shifting & Office Shifting Nepal",
+      "Sajilo Packers and Movers | Home Shifting Kathmandu & Movers in Nepal",
     description:
-      "Nepal's most trusted packers and movers. Room shifting, office shifting, vehicle transport, and packing services across Kathmandu, Pokhara, Butwal & all Nepal.",
+      "Nepal's most trusted moving company. Home shifting Kathmandu, office shifting, vehicle transport, and packing services across all of Nepal.",
     url: "https://www.Sajilopackersandmovers.com",
     type: "website",
   },
