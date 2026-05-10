@@ -100,7 +100,9 @@ export default function BranchesPage() {
       <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
         <ol className="flex items-center gap-1">
           <li>
-            <a href="/" className="hover:text-red-500 transition">Home</a>
+            <a href="/" className="hover:text-red-500 transition">
+              Home
+            </a>
           </li>
           <li>/</li>
           <li className="text-slate-900 font-semibold">Branches</li>
@@ -112,7 +114,16 @@ export default function BranchesPage() {
           Sajilo Packers and Movers Branches Across Nepal
         </h1>
         <p className="text-slate-600">
-          Find your nearest <strong>Sajilo Packers and Movers</strong> branch for <strong>room shifting</strong>, <strong>office shifting</strong>, <strong>vehicle transport</strong>, and <strong>packing services</strong>. Call 24/7 for any branch: <a href="tel:+9779851071848" className="text-red-500 font-semibold hover:underline">+977 9851071848</a>
+          Find your nearest <strong>Sajilo Packers and Movers</strong> branch
+          for <strong>room shifting</strong>, <strong>office shifting</strong>,{" "}
+          <strong>vehicle transport</strong>, and{" "}
+          <strong>packing services</strong>. Call 24/7 for any branch:{" "}
+          <a
+            href="tel:+9779851071848"
+            className="text-red-500 font-semibold hover:underline"
+          >
+            +977 9851071848
+          </a>
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -133,7 +144,15 @@ export default function BranchesPage() {
           Packers and Movers in Every Major City of Nepal
         </h2>
         <p className="text-slate-600">
-          Whether you need <strong>packers and movers in Kathmandu</strong>, <strong>room shifting in Pokhara</strong>, <strong>office shifting in Butwal</strong>, or <strong>house shifting in Biratnagar</strong> — Sajilo Packers and Movers has local branches with experienced crews ready to help. Our network covers all major cities including Dharan, Chitwan, Hetauda, Bhaktapur, Lalitpur, and Janakpur. Each branch offers the full range of services: residential shifting, corporate moving, vehicle &amp; bike transport, and professional packing &amp; boxing.
+          Whether you need <strong>packers and movers in Kathmandu</strong>,{" "}
+          <strong>room shifting in Pokhara</strong>,{" "}
+          <strong>office shifting in Butwal</strong>, or{" "}
+          <strong>house shifting in Biratnagar</strong> — Sajilo Packers and
+          Movers has local branches with experienced crews ready to help. Our
+          network covers all major cities including Dharan, Chitwan, Hetauda,
+          Bhaktapur, Lalitpur, and Janakpur. Each branch offers the full range
+          of services: residential shifting, corporate moving, vehicle &amp;
+          bike transport, and professional packing &amp; boxing.
         </p>
       </article>
     </div>
