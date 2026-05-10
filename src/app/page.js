@@ -78,7 +78,7 @@ import ServicesWithGallery from "@/components/Slider";
 
 export const metadata = {
   title:
-    "Sajilo Packers and Movers | Trusted Moving Company in Kathmandu & Nepal",
+    "Sajilo Packers and Movers | Moving Company Nepal",
   description:
     "Trusted packers and movers in Kathmandu, Nepal. Affordable home shifting, office shifting, vehicle transport & packing services. Call 24/7: +977-9851071848",
   keywords: [
