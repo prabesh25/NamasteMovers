@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
 
-        {/* WhatsApp Floating Button */}
+        {/*WhatsApp Floating Button*/}
         <a
           href="https://wa.me/9779851071848?text=Hello%2C%20I%20need%20a%20moving%20quote"
           target="_blank"
