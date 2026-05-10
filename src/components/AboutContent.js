@@ -1,16 +1,54 @@
 "use client";
+import Image from "next/image";
+
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
-import { FaShieldAlt, FaClock, FaUsers, FaDollarSign, FaGlobe, FaPhoneAlt, FaVideo, FaBoxOpen, FaTruck, FaClipboardList, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaShieldAlt,
+  FaClock,
+  FaUsers,
+  FaDollarSign,
+  FaGlobe,
+  FaPhoneAlt,
+  FaVideo,
+  FaBoxOpen,
+  FaTruck,
+  FaClipboardList,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const milestones = [
-  { year: "2010", title: "Founded in Kathmandu", desc: "Started with 3 team members and a single truck in Kalanki, Kathmandu." },
-  { year: "2014", title: "Expanded to Pokhara & Butwal", desc: "Opened branches in Pokhara and Butwal to serve Western Nepal." },
-  { year: "2017", title: "500+ Team Members", desc: "Grew our skilled workforce and added vehicle & bike transport services." },
-  { year: "2020", title: "10,000 Moves Completed", desc: "Reached a milestone of 10,000 successful moves across Nepal." },
-  { year: "2023", title: "Pan-Nepal Coverage", desc: "Branches in 8+ cities — Biratnagar, Dharan, Chitwan, Hetauda, Janakpur." },
-  { year: "2026", title: "15,000+ Happy Customers", desc: "Nepal's most trusted moving company with 99% customer satisfaction." },
+  {
+    year: "2010",
+    title: "Founded in Kathmandu",
+    desc: "Started with 3 team members and a single truck in Kalanki, Kathmandu.",
+  },
+  {
+    year: "2014",
+    title: "Expanded to Pokhara & Butwal",
+    desc: "Opened branches in Pokhara and Butwal to serve Western Nepal.",
+  },
+  {
+    year: "2017",
+    title: "500+ Team Members",
+    desc: "Grew our skilled workforce and added vehicle & bike transport services.",
+  },
+  {
+    year: "2020",
+    title: "10,000 Moves Completed",
+    desc: "Reached a milestone of 10,000 successful moves across Nepal.",
+  },
+  {
+    year: "2023",
+    title: "Pan-Nepal Coverage",
+    desc: "Branches in 8+ cities — Biratnagar, Dharan, Chitwan, Hetauda, Janakpur.",
+  },
+  {
+    year: "2026",
+    title: "15,000+ Happy Customers",
+    desc: "Nepal's most trusted moving company with 99% customer satisfaction.",
+  },
 ];
 
 const values = [
@@ -98,7 +136,10 @@ export default function AboutContent() {
       setSlideProgress(0);
     }, SLIDE_DURATION);
 
-    return () => { clearInterval(interval); clearTimeout(timeout); };
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
   }, [activeSlide, isAutoplaying]);
 
   const goToNext = useCallback(() => {
@@ -131,7 +172,13 @@ export default function AboutContent() {
       {/* ==================== HERO SECTION ==================== */}
       <section className="relative overflow-hidden" style={{ height: "70dvh" }}>
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
             <source
               src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
               type="video/mp4"
@@ -143,7 +190,11 @@ export default function AboutContent() {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-16">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-sm text-white/60">
-              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+              <li>
+                <Link href="/" className="hover:text-white transition">
+                  Home
+                </Link>
+              </li>
               <li className="text-white/40">/</li>
               <li className="text-white font-semibold">About Us</li>
             </ol>
@@ -161,9 +212,11 @@ export default function AboutContent() {
           </h1>
 
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-8">
-            15+ years of safe, reliable <strong className="text-white">room shifting</strong>,{" "}
+            15+ years of safe, reliable{" "}
+            <strong className="text-white">room shifting</strong>,{" "}
             <strong className="text-white">office shifting</strong>, and{" "}
-            <strong className="text-white">moving services</strong> across Nepal.
+            <strong className="text-white">moving services</strong> across
+            Nepal.
           </p>
 
           <div className="absolute bottom-8">
@@ -203,18 +256,38 @@ export default function AboutContent() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img1.jpg" alt="Sajilo Packers team packing household items in Kathmandu" className="w-full h-48 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img1.jpg"
+                      alt="Sajilo Packers team packing household items in Kathmandu"
+                      className="w-full h-48 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img6.jpg" alt="Room shifting by Sajilo Packers in Nepal" className="w-full h-64 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img6.jpg"
+                      alt="Room shifting by Sajilo Packers in Nepal"
+                      className="w-full h-64 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img2.jpg" alt="Office shifting and corporate moving in Kathmandu" className="w-full h-64 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img2.jpg"
+                      alt="Office shifting and corporate moving in Kathmandu"
+                      className="w-full h-64 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                    <img src="/img3.jpg" alt="Vehicle transport across Nepal" className="w-full h-48 object-cover" loading="lazy" />
+                    <Image width={800} height={600} 
+                      src="/img3.jpg"
+                      alt="Vehicle transport across Nepal"
+                      className="w-full h-48 object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -236,21 +309,60 @@ export default function AboutContent() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Sajilo Packers and Movers</strong> was founded in 2010 with a simple vision: make moving stress-free for every Nepali family and business. What started with 3 dedicated team members and a single truck in Kalanki, Kathmandu has grown into Nepal&apos;s most trusted moving company.
+                  <strong className="text-gray-900">
+                    Sajilo Packers and Movers
+                  </strong>{" "}
+                  was founded in 2010 with a simple vision: make moving
+                  stress-free for every Nepali family and business. What started
+                  with 3 dedicated team members and a single truck in Kalanki,
+                  Kathmandu has grown into Nepal&apos;s most trusted moving
+                  company.
                 </p>
                 <p>
-                  Today, we have <strong className="text-gray-900">500+ expert team members</strong>, branches in <strong className="text-gray-900">8+ major cities</strong>, and over <strong className="text-gray-900">15,000 successful moves</strong> completed. From <strong className="text-gray-900">room shifting in Kathmandu</strong> to <strong className="text-gray-900">office shifting in Pokhara</strong>, from <strong className="text-gray-900">vehicle transport</strong> to <strong className="text-gray-900">international relocations</strong> — we handle it all with care, speed, and professionalism.
+                  Today, we have{" "}
+                  <strong className="text-gray-900">
+                    500+ expert team members
+                  </strong>
+                  , branches in{" "}
+                  <strong className="text-gray-900">8+ major cities</strong>,
+                  and over{" "}
+                  <strong className="text-gray-900">
+                    15,000 successful moves
+                  </strong>{" "}
+                  completed. From{" "}
+                  <strong className="text-gray-900">
+                    room shifting in Kathmandu
+                  </strong>{" "}
+                  to{" "}
+                  <strong className="text-gray-900">
+                    office shifting in Pokhara
+                  </strong>
+                  , from{" "}
+                  <strong className="text-gray-900">vehicle transport</strong>{" "}
+                  to{" "}
+                  <strong className="text-gray-900">
+                    international relocations
+                  </strong>{" "}
+                  — we handle it all with care, speed, and professionalism.
                 </p>
                 <p>
-                  Our secret? Treating every customer&apos;s belongings as if they were our own. That&apos;s why 99% of our customers recommend us to their friends and family.
+                  Our secret? Treating every customer&apos;s belongings as if
+                  they were our own. That&apos;s why 99% of our customers
+                  recommend us to their friends and family.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition text-center">
+                <Link
+                  href="/contact"
+                  className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition text-center"
+                >
                   Get Free Estimate →
                 </Link>
-                <Link href="/services" className="rounded-full border border-gray-300 bg-white px-8 py-4 text-gray-800 font-semibold hover:border-red-300 hover:text-red-600 transition text-center">
+                <Link
+                  href="/services"
+                  className="rounded-full border border-gray-300 bg-white px-8 py-4 text-gray-800 font-semibold hover:border-red-300 hover:text-red-600 transition text-center"
+                >
                   View Our Services
                 </Link>
               </div>
@@ -280,7 +392,11 @@ export default function AboutContent() {
             {localVideos.map((_, idx) => (
               <button
                 key={idx}
-                onClick={() => { setActiveSlide(idx); setIsAutoplaying(true); setSlideProgress(0); }}
+                onClick={() => {
+                  setActiveSlide(idx);
+                  setIsAutoplaying(true);
+                  setSlideProgress(0);
+                }}
                 className={`whitespace-nowrap px-4 md:px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                   idx === activeSlide
                     ? "bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg shadow-red-500/25 scale-105"
@@ -293,7 +409,10 @@ export default function AboutContent() {
           </div>
 
           {/* Coverflow-style video carousel */}
-          <div className="relative flex items-center justify-center" style={{ height: "clamp(280px, 50vw, 440px)" }}>
+          <div
+            className="relative flex items-center justify-center"
+            style={{ height: "clamp(280px, 50vw, 440px)" }}
+          >
             {localVideos.map((src, idx) => {
               const total = localVideos.length;
               let offset = idx - activeSlide;
@@ -309,10 +428,18 @@ export default function AboutContent() {
               return (
                 <button
                   key={idx}
-                  onClick={() => { setActiveSlide(idx); setIsAutoplaying(true); setSlideProgress(0); }}
+                  onClick={() => {
+                    setActiveSlide(idx);
+                    setIsAutoplaying(true);
+                    setSlideProgress(0);
+                  }}
                   className="absolute transition-all duration-700 ease-out focus:outline-none"
                   style={{
-                    width: isActive ? "min(640px, 75vw)" : isAdjacent ? "min(340px, 35vw)" : "min(200px, 22vw)",
+                    width: isActive
+                      ? "min(640px, 75vw)"
+                      : isAdjacent
+                        ? "min(340px, 35vw)"
+                        : "min(200px, 22vw)",
                     height: isActive ? "100%" : isAdjacent ? "75%" : "55%",
                     transform: `translateX(${offset * (isAdjacent ? 300 : 400)}px)`,
                     zIndex: isActive ? 30 : isAdjacent ? 20 : 10,
@@ -320,11 +447,17 @@ export default function AboutContent() {
                     filter: isActive ? "none" : "brightness(0.6)",
                   }}
                 >
-                  <div className={`relative w-full h-full rounded-3xl overflow-hidden transition-shadow duration-500 ${
-                    isActive ? "shadow-[0_30px_80px_-20px_rgba(239,68,68,0.35)]" : "shadow-2xl"
-                  }`}>
+                  <div
+                    className={`relative w-full h-full rounded-3xl overflow-hidden transition-shadow duration-500 ${
+                      isActive
+                        ? "shadow-[0_30px_80px_-20px_rgba(239,68,68,0.35)]"
+                        : "shadow-2xl"
+                    }`}
+                  >
                     <video
-                      ref={(el) => { if (el) videoRefs.current[idx] = el; }}
+                      ref={(el) => {
+                        if (el) videoRefs.current[idx] = el;
+                      }}
                       muted
                       playsInline
                       loop
@@ -340,7 +473,11 @@ export default function AboutContent() {
                     {!isActive && (
                       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <div className="w-12 h-12 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                          <svg
+                            className="w-5 h-5 text-white ml-0.5"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
                             <path d="M8 5v14l11-7z" />
                           </svg>
                         </div>
@@ -356,16 +493,36 @@ export default function AboutContent() {
               onClick={goToPrev}
               className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 rounded-full bg-black/50 backdrop-blur-md border border-white/10 flex items-center justify-center text-white/70 hover:text-white hover:bg-black/70 hover:border-white/30 transition-all"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
             <button
               onClick={goToNext}
               className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-40 w-11 h-11 rounded-full bg-black/50 backdrop-blur-md border border-white/10 flex items-center justify-center text-white/70 hover:text-white hover:bg-black/70 hover:border-white/30 transition-all"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>
@@ -377,13 +534,15 @@ export default function AboutContent() {
                 className="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full"
                 style={{
                   width: `${slideProgress}%`,
-                  transition: slideProgress === 0 ? "none" : "width 100ms linear",
+                  transition:
+                    slideProgress === 0 ? "none" : "width 100ms linear",
                 }}
               />
             </div>
             <div className="text-center mt-3">
               <span className="text-white/30 text-xs font-mono tracking-widest">
-                {String(activeSlide + 1).padStart(2, "0")} / {String(localVideos.length).padStart(2, "0")}
+                {String(activeSlide + 1).padStart(2, "0")} /{" "}
+                {String(localVideos.length).padStart(2, "0")}
               </span>
             </div>
           </div>
@@ -405,7 +564,8 @@ export default function AboutContent() {
               Our Core Values
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              What makes Sajilo Packers and Movers the #1 choice for room shifting, office shifting, and moving services in Nepal.
+              What makes Sajilo Packers and Movers the #1 choice for room
+              shifting, office shifting, and moving services in Nepal.
             </p>
           </div>
 
@@ -418,7 +578,9 @@ export default function AboutContent() {
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform">
                   {v.icon}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{v.title}</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  {v.title}
+                </h3>
                 <p className="text-gray-600 leading-relaxed">{v.desc}</p>
               </article>
             ))}
@@ -443,15 +605,22 @@ export default function AboutContent() {
 
             <div className="space-y-12">
               {milestones.map((m, idx) => (
-                <div key={m.year} className={`relative flex items-center gap-8 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                <div
+                  key={m.year}
+                  className={`relative flex items-center gap-8 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+                >
                   <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-red-500 to-orange-500 border-4 border-white shadow-lg -translate-x-1/2 z-10" />
 
-                  <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${idx % 2 === 0 ? "md:pr-4" : "md:pl-4"}`}>
+                  <div
+                    className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${idx % 2 === 0 ? "md:pr-4" : "md:pl-4"}`}
+                  >
                     <div className="rounded-2xl bg-white border border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] p-6 hover:shadow-[0_20px_60px_-15px_rgba(255,80,80,0.15)] transition-all duration-300">
                       <div className="inline-flex items-center rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-3 py-1 text-xs font-bold text-white mb-3">
                         {m.year}
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 mb-2">{m.title}</h3>
+                      <h3 className="text-lg font-bold text-gray-900 mb-2">
+                        {m.title}
+                      </h3>
                       <p className="text-gray-600">{m.desc}</p>
                     </div>
                   </div>
@@ -466,7 +635,7 @@ export default function AboutContent() {
       <section className="py-20 md:py-28 px-6 bg-gradient-to-b from-orange-50 via-red-50/50 to-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-200/30 rounded-full blur-[100px]" />
 
-        <div className="max-w-7xl mx-auto relative z-10">
+        {/* <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-14">
             <span className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold tracking-wide text-slate-700">
               Our Leadership
@@ -483,7 +652,7 @@ export default function AboutContent() {
             {teamMembers.map((member) => (
               <div key={member.name} className="group text-center">
                 <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-xl mb-4 aspect-[3/4]">
-                  <img
+                  <Image width={800} height={600} 
                     src={member.img}
                     alt={`${member.name} - ${member.role} at Sajilo Packers and Movers Nepal`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -496,7 +665,7 @@ export default function AboutContent() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* ==================== BEHIND THE SCENES VIDEO ==================== */}
@@ -507,11 +676,16 @@ export default function AboutContent() {
               <div className="absolute -inset-4 bg-gradient-to-br from-red-200/30 via-orange-200/20 to-transparent rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl overflow-hidden border border-gray-100 shadow-2xl">
                 <div className="aspect-video bg-black">
-                  <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
                     <source
                       // src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
-                                            src="/videos/heroVideo.mp4"
-
+                      src="/videos/heroVideo.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -528,23 +702,37 @@ export default function AboutContent() {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Every move starts with a detailed assessment. Our team evaluates item volume, fragile items, distance, and access points to create a customized moving plan.
+                  Every move starts with a detailed assessment. Our team
+                  evaluates item volume, fragile items, distance, and access
+                  points to create a customized moving plan.
                 </p>
                 <p>
-                  We use <strong className="text-gray-900">premium packing materials</strong> — corrugated boxes, bubble wrap, foam sheets, and specialized containers for electronics, glassware, and artwork.
+                  We use{" "}
+                  <strong className="text-gray-900">
+                    premium packing materials
+                  </strong>{" "}
+                  — corrugated boxes, bubble wrap, foam sheets, and specialized
+                  containers for electronics, glassware, and artwork.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                {([
+                {[
                   { icon: <FaBoxOpen />, text: "Premium Packing" },
                   { icon: <FaTruck />, text: "GPS-Tracked Fleet" },
                   { icon: <FaShieldAlt />, text: "Damage Protection" },
                   { icon: <FaClipboardList />, text: "Full Inventory" },
-                ]).map((item) => (
-                  <div key={item.text} className="flex items-center gap-3 bg-orange-50 rounded-xl px-4 py-3 border border-orange-100">
-                    <span className="text-2xl text-orange-500">{item.icon}</span>
-                    <span className="font-semibold text-gray-800 text-sm">{item.text}</span>
+                ].map((item) => (
+                  <div
+                    key={item.text}
+                    className="flex items-center gap-3 bg-orange-50 rounded-xl px-4 py-3 border border-orange-100"
+                  >
+                    <span className="text-2xl text-orange-500">
+                      {item.icon}
+                    </span>
+                    <span className="font-semibold text-gray-800 text-sm">
+                      {item.text}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -562,24 +750,56 @@ export default function AboutContent() {
                 We Serve All Major Cities in Nepal
               </h2>
               <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-                From Kathmandu to Biratnagar, our branches and teams are ready to help you move safely and affordably.
+                From Kathmandu to Biratnagar, our branches and teams are ready
+                to help you move safely and affordably.
               </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {["Kathmandu", "Lalitpur", "Bhaktapur", "Pokhara", "Butwal", "Biratnagar", "Dharan", "Chitwan", "Hetauda", "Janakpur", "Nepalgunj", "Dhangadhi"].map((city) => (
-                <div key={city} className="rounded-xl bg-gradient-to-br from-orange-50 to-red-50 border border-orange-100 p-4 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all">
+              {[
+                "Kathmandu",
+                "Lalitpur",
+                "Bhaktapur",
+                "Pokhara",
+                "Butwal",
+                "Biratnagar",
+                "Dharan",
+                "Chitwan",
+                "Hetauda",
+                "Janakpur",
+                "Nepalgunj",
+                "Dhangadhi",
+              ].map((city) => (
+                <div
+                  key={city}
+                  className="rounded-xl bg-gradient-to-br from-orange-50 to-red-50 border border-orange-100 p-4 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                >
                   <FaMapMarkerAlt className="text-2xl mb-1 mx-auto text-orange-500" />
-                  <div className="font-semibold text-gray-800 text-sm">{city}</div>
+                  <div className="font-semibold text-gray-800 text-sm">
+                    {city}
+                  </div>
                 </div>
               ))}
             </div>
 
             <div className="text-center mt-8">
-              <Link href="/locations" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition">
+              <Link
+                href="/locations"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-orange-500 px-8 py-4 text-white font-semibold shadow-lg hover:opacity-90 transition"
+              >
                 View All Locations
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Link>
             </div>
@@ -590,7 +810,13 @@ export default function AboutContent() {
       {/* ==================== CTA SECTION ==================== */}
       <section className="relative py-24 md:py-32 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
             <source
               src="/videos/videoblocks-6499e432f8b2823bb04edc31_hs79zx5_h__df8f2717a60da2beb2b1c553b6a22ab1__P360.mp4"
               type="video/mp4"
@@ -607,14 +833,21 @@ export default function AboutContent() {
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-            Get a free estimate for room shifting, office shifting, vehicle transport, or any moving service across Nepal.
+            Get a free estimate for room shifting, office shifting, vehicle
+            transport, or any moving service across Nepal.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition">
+            <Link
+              href="/contact"
+              className="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-orange-500 px-10 py-5 text-white font-bold text-lg shadow-xl hover:opacity-90 transition"
+            >
               Get Free Estimate →
             </Link>
-            <a href="tel:+9779851071848" className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition">
+            <a
+              href="tel:+9779851071848"
+              className="rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-10 py-5 text-white font-bold text-lg hover:bg-white/20 transition"
+            >
               <FaPhoneAlt className="inline-block mr-2" /> Call: +977-9851071848
             </a>
           </div>

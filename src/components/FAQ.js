@@ -1,5 +1,6 @@
 
 'use client';
+import Image from "next/image";
 
 import React, { useMemo, useState } from 'react';
 
@@ -80,7 +81,7 @@ export default function FAQ() {
                 <div className="absolute -inset-6 rounded-[26px] bg-gradient-to-br from-red-400/15 via-orange-300/10 to-purple-400/10 blur-2xl" />
                 <div className="relative rounded-2xl overflow-hidden border border-gray-200 bg-white/5 shadow-[0_25px_60px_-40px_rgba(0,0,0,0.08)] transform md:-rotate-2">
                   <div className="aspect-[4/5] w-full bg-black/10">
-                    <img
+                    <Image width={800} height={600} 
                       src={imageSrc}
                       alt="Frequently Asked Questions about Room Shifting, Office Shifting and Moving Services in Nepal - Sajilo Packers and Movers"
                       className="h-full w-full object-contain"
