@@ -35,7 +35,7 @@ const services = [
       "No hidden charges",
       "Available across all Nepal",
     ],
-    img: "/ResidentialShifting.jpg",
+    img: "/images/ResidentialShifting.jpg",
   },
   {
     name: "Office Shifting",
@@ -66,7 +66,7 @@ const services = [
       "Available weekends & nights",
       "Serving all major cities",
     ],
-    img: "/corporateMoving.jpg",
+    img: "/images/corporateMoving.jpg",
   },
   {
     name: "Residential Shifting",
@@ -97,7 +97,7 @@ const services = [
       "Within city & intercity",
       "Transparent pricing",
     ],
-    img: "/ResidentialShifting.jpg",
+    img: "/images/ResidentialShifting.jpg",
   },
   {
     name: "Corporate Moving",
@@ -128,7 +128,7 @@ const services = [
       "Employee coordination",
       "Pan-Nepal coverage",
     ],
-    img: "/corporateMoving.jpg",
+    img: "/images/corporateMoving.jpg",
   },
   {
     name: "Vehicle & Bike Transport",
@@ -159,7 +159,7 @@ const services = [
       "Door-to-door delivery",
       "Insurance coverage available",
     ],
-    img: "/vehicleAndBikeTransport.jpg",
+    img: "/images/vehicleAndBikeTransport.jpg",
   },
   {
     name: "Packing & Boxing",
@@ -190,7 +190,7 @@ const services = [
       "Artwork & antique packing",
       "Available as standalone service",
     ],
-    img: "/PackingAndBoxing.jpg",
+    img: "/images/PackingAndBoxing.jpg",
   },
   {
     name: "International Moving",
@@ -221,7 +221,7 @@ const services = [
       "Worldwide coverage",
       "Expert long-distance packing",
     ],
-    img: "/InternationalMoving.jpg",
+    img: "/images/InternationalMoving.jpg",
   },
   {
     name: "Storage Solutions",
@@ -252,7 +252,7 @@ const services = [
       "24/7 security monitoring",
       "Easy access during business hours",
     ],
-    img: "/storageSolutions.webp",
+    img: "/images/storageSolutions.webp",
   },
 ];
 
@@ -474,13 +474,13 @@ export default function ServicesContent() {
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-3">
                   <Image width={800} height={600} 
-                    src="/img3.jpg"
+                    src="/images/img3.jpg"
                     alt="Room shifting service"
                     className="w-full h-40 object-cover rounded-2xl shadow-lg"
                     loading="lazy"
                   />
                   <Image width={800} height={600} 
-                    src="/corporateMoving.jpg"
+                    src="/images/corporateMoving.jpg"
                     alt="Corporate moving"
                     className="w-full h-52 object-cover rounded-2xl shadow-lg"
                     loading="lazy"
@@ -488,13 +488,13 @@ export default function ServicesContent() {
                 </div>
                 <div className="space-y-3 pt-6">
                   <Image width={800} height={600} 
-                    src="/ResidentialShifting.jpg"
+                    src="/images/ResidentialShifting.jpg"
                     alt="Residential shifting"
                     className="w-full h-52 object-cover rounded-2xl shadow-lg"
                     loading="lazy"
                   />
                   <Image width={800} height={600} 
-                    src="/PackingAndBoxing.jpg"
+                    src="/images/PackingAndBoxing.jpg"
                     alt="Packing services"
                     className="w-full h-40 object-cover rounded-2xl shadow-lg"
                     loading="lazy"

@@ -13,7 +13,7 @@ const testimonials = [
     service: "Room Shifting",
     text: "Sajilo Packers and Movers handled our room shifting in Kathmandu with great care. The team arrived on time, packed everything safely, and delivered without any damage. Highly recommended for room shifting services in Nepal.",
     rating: 5,
-    image: "/01Review.jpg",
+    image: "/images/01Review.jpg",
   },
   {
     name: "Sita Dhakal",
@@ -21,7 +21,7 @@ const testimonials = [
     service: "Office Shifting",
     text: "We used Sajilo Packers and Movers for office shifting from Butwal to Kathmandu. Good communication from booking to delivery. The price was fair with no hidden charges. Our IT equipment was handled very professionally.",
     rating: 5,
-    image: "/02Review.jpg",
+    image: "/images/02Review.jpg",
   },
   {
     name: "Abisek Poudel",
@@ -29,7 +29,7 @@ const testimonials = [
     service: "Vehicle Transport",
     text: "I needed urgent bike transport from Pokhara to Kathmandu and Sajilo Packers managed it within a day. Very professional staff, secure loading, and GPS tracking throughout. Thank you for the quick and safe vehicle transport service.",
     rating: 5,
-    image: "/03Review.webp",
+    image: "/images/03Review.webp",
   },
 ];
 

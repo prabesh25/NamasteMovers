@@ -7,13 +7,13 @@
 // import React, { useEffect, useRef } from 'react';
 
 // const images = [
-//   // '/img1.jpg',
-//   '/img2.jpg',
-//   '/img3.jpg',
-//   '/img4.webp',
-//   '/img5.jpg',
-//   '/img6.jpg',
-//   '/img7.webp',
+//   // '/images/img1.jpg',
+//   '/images/img2.jpg',
+//   '/images/img3.jpg',
+//   '/images/img4.webp',
+//   '/images/img5.jpg',
+//   '/images/img6.jpg',
+//   '/images/img7.webp',
 // ];
 
 // export default function InfiniteGallerySlider() {
@@ -125,12 +125,12 @@ import Image from "next/image";
 import React, { useEffect, useRef } from 'react';
 
 const images = [
-  { src: '/img2.jpg', alt: 'Room shifting service in Kathmandu by Sajilo Packers and Movers' },
-  { src: '/img3.jpg', alt: 'Office shifting and corporate moving in Nepal' },
-  { src: '/img4.webp', alt: 'Professional packing and boxing services in Pokhara' },
-  { src: '/img5.jpg', alt: 'Vehicle and bike transport across Nepal' },
-  { src: '/img6.jpg', alt: 'Residential shifting service in Butwal and Biratnagar' },
-  { src: '/img7.webp', alt: 'Safe furniture moving and house shifting in Kathmandu Valley' },
+  { src: '/images/img2.jpg', alt: 'Room shifting service in Kathmandu by Sajilo Packers and Movers' },
+  { src: '/images/img3.jpg', alt: 'Office shifting and corporate moving in Nepal' },
+  { src: '/images/img4.webp', alt: 'Professional packing and boxing services in Pokhara' },
+  { src: '/images/img5.jpg', alt: 'Vehicle and bike transport across Nepal' },
+  { src: '/images/img6.jpg', alt: 'Residential shifting service in Butwal and Biratnagar' },
+  { src: '/images/img7.webp', alt: 'Safe furniture moving and house shifting in Kathmandu Valley' },
 ];
 
 const locations = [
