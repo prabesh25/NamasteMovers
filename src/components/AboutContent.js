@@ -22,7 +22,7 @@ const milestones = [
   {
     year: "2010",
     title: "Founded in Kathmandu",
-    desc: "Started with 3 team members and a single truck in Kalanki, Kathmandu.",
+    desc: "Started with 3 team members and a single truck in Baluwatar, Kathmandu.",
   },
   {
     year: "2014",
@@ -85,10 +85,10 @@ const values = [
 ];
 
 const teamMembers = [
-  { name: "Ram Shrestha", role: "Founder & CEO", img: "/img1.jpg" },
-  { name: "Sita Tamang", role: "Operations Head", img: "/img2.jpg" },
-  { name: "Bikash Gurung", role: "Logistics Manager", img: "/img3.jpg" },
-  { name: "Anita Karki", role: "Customer Relations", img: "/img5.jpg" },
+  { name: "Ram Shrestha", role: "Founder & CEO", img: "/images/img1.jpg" },
+  { name: "Sita Tamang", role: "Operations Head", img: "/images/img2.jpg" },
+  { name: "Bikash Gurung", role: "Logistics Manager", img: "/images/img3.jpg" },
+  { name: "Anita Karki", role: "Customer Relations", img: "/images/img5.jpg" },
 ];
 
 const statsData = [
@@ -257,7 +257,7 @@ export default function AboutContent() {
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img1.jpg"
+                      src="/images/img1.jpg"
                       alt="Sajilo Packers team packing household items in Kathmandu"
                       className="w-full h-48 object-cover"
                       loading="lazy"
@@ -265,7 +265,7 @@ export default function AboutContent() {
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img6.jpg"
+                      src="/images/img6.jpg"
                       alt="Room shifting by Sajilo Packers in Nepal"
                       className="w-full h-64 object-cover"
                       loading="lazy"
@@ -275,7 +275,7 @@ export default function AboutContent() {
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img2.jpg"
+                      src="/images/img2.jpg"
                       alt="Office shifting and corporate moving in Kathmandu"
                       className="w-full h-64 object-cover"
                       loading="lazy"
@@ -283,7 +283,7 @@ export default function AboutContent() {
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img3.jpg"
+                      src="/images/img3.jpg"
                       alt="Vehicle transport across Nepal"
                       className="w-full h-48 object-cover"
                       loading="lazy"
@@ -314,7 +314,7 @@ export default function AboutContent() {
                   </strong>{" "}
                   was founded in 2010 with a simple vision: make moving
                   stress-free for every Nepali family and business. What started
-                  with 3 dedicated team members and a single truck in Kalanki,
+                  with 3 dedicated team members and a single truck in Baluwatar,
                   Kathmandu has grown into Nepal&apos;s most trusted moving
                   company.
                 </p>

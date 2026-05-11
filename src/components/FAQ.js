@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useMemo, useState } from 'react';
 
 export default function FAQ() {
-  const imageSrc = '/faq.png';
+  const imageSrc = '/images/faq.png';
 
   const faqs = useMemo(
     () => [
