@@ -19,7 +19,7 @@ const locations = [
   {
     city: "Kathmandu",
     area: "New Baneshwor",
-    img: "/img3.jpg",
+    img: "/images/img3.jpg",
     desc: "Our headquarters — same-day room shifting, office shifting, and residential moving with local experts for high-rise apartment moves.",
     services: [
       "Room Shifting",
@@ -32,7 +32,7 @@ const locations = [
   {
     city: "Lalitpur",
     area: "Satdobato",
-    img: "/img4.webp",
+    img: "/images/img4.webp",
     desc: "Room shifting and office shifting in Lalitpur with weekend and night slots to reduce traffic delays. Expert teams for Patan and surrounding areas.",
     services: [
       "Room Shifting",
@@ -45,7 +45,7 @@ const locations = [
   {
     city: "Bhaktapur",
     area: "Sallaghari",
-    img: "/img7.webp",
+    img: "/images/img7.webp",
     desc: "Packers and movers in Bhaktapur specializing in apartment moves, villa relocations, and residential shifting in heritage areas.",
     services: [
       "Room Shifting",
@@ -58,7 +58,7 @@ const locations = [
   {
     city: "Pokhara",
     area: "Hallanchowk",
-    img: "/img11.jpg",
+    img: "/images/img11.jpg",
     desc: "Professional packers and movers in Pokhara for house shifting, office shifting, and packing services. Tourist-area aware crews available.",
     services: [
       "Room Shifting",
@@ -71,7 +71,7 @@ const locations = [
   {
     city: "Butwal",
     area: "Traffic Chowk",
-    img: "/img1.jpg",
+    img: "/images/img1.jpg",
     desc: "Professional office shifting and room shifting in Butwal with flexible scheduling and affordable pricing. Serving Lumbini province.",
     services: [
       "Room Shifting",
@@ -84,7 +84,7 @@ const locations = [
   {
     city: "Biratnagar",
     area: "Main Road",
-    img: "/img13.png",
+    img: "/images/img13.png",
     desc: "Reliable packers and movers in Biratnagar for intercity moves, vehicle transport, and corporate relocation across eastern Nepal.",
     services: [
       "Room Shifting",
@@ -97,7 +97,7 @@ const locations = [
   {
     city: "Dharan",
     area: "Putali Line",
-    img: "/img2.jpg",
+    img: "/images/img2.jpg",
     desc: "Efficient room shifting, office shifting, and furniture moving services in Dharan with careful loading and unloading by trained teams.",
     services: [
       "Room Shifting",
@@ -110,7 +110,7 @@ const locations = [
   {
     city: "Chitwan",
     area: "Narayanghat",
-    img: "/img12.jpg",
+    img: "/images/img12.jpg",
     desc: "Trusted packers and movers in Chitwan for local and intercity house shifting, vehicle transport, and corporate moving solutions.",
     services: [
       "Room Shifting",
@@ -123,7 +123,7 @@ const locations = [
   {
     city: "Hetauda",
     area: "Bus Park Area",
-    img: "/img6.jpg",
+    img: "/images/img6.jpg",
     desc: "Affordable room shifting and office shifting in Hetauda with expert planning, safe packing, and on-time delivery.",
     services: [
       "Room Shifting",
@@ -136,7 +136,7 @@ const locations = [
   {
     city: "Janakpur",
     area: "Station Road",
-    img: "/img5.jpg",
+    img: "/images/img5.jpg",
     desc: "Trusted intercity moving, room shifting, and packing services connecting Janakpur to Kathmandu and all major cities in Nepal.",
     services: [
       "Room Shifting",
@@ -149,7 +149,7 @@ const locations = [
   {
     city: "Nepalgunj",
     area: "Surkhet Road",
-    img: "/img14.webp",
+    img: "/images/img14.webp",
     desc: "Mid-western Nepal's go-to moving company. Room shifting, office shifting, and vehicle transport with local expertise.",
     services: [
       "Room Shifting",
@@ -162,7 +162,7 @@ const locations = [
   {
     city: "Dhangadhi",
     area: "Main Bazaar",
-    img: "/img16.jpg",
+    img: "/images/img16.jpg",
     desc: "Far-western Nepal covered. Professional room shifting, packing, and intercity moving services from Dhangadhi.",
     services: [
       "Room Shifting",
@@ -460,7 +460,7 @@ export default function LocationsContent() {
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img1.jpg"
+                      src="/images/img1.jpg"
                       alt="Sajilo Packers local team in Kathmandu"
                       className="w-full h-48 object-cover"
                       loading="lazy"
@@ -468,7 +468,7 @@ export default function LocationsContent() {
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img6.jpg"
+                      src="/images/img6.jpg"
                       alt="Moving truck in Nepal"
                       className="w-full h-64 object-cover"
                       loading="lazy"
@@ -478,7 +478,7 @@ export default function LocationsContent() {
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img2.jpg"
+                      src="/images/img2.jpg"
                       alt="Office shifting in Pokhara"
                       className="w-full h-64 object-cover"
                       loading="lazy"
@@ -486,7 +486,7 @@ export default function LocationsContent() {
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <Image width={800} height={600} 
-                      src="/img3.jpg"
+                      src="/images/img3.jpg"
                       alt="Room shifting in Biratnagar"
                       className="w-full h-48 object-cover"
                       loading="lazy"

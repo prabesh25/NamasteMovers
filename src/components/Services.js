@@ -6,12 +6,12 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const services = [
-  { title: 'Residential Shifting', desc: 'Professional residential shifting service in Kathmandu, Pokhara, Butwal and across Nepal. Careful packing, loading, transporting, and setup for houses and apartments.', img: '/ResidentialShifting.jpg' },
-  { title: 'Corporate Moving', desc: 'Expert corporate moving and office shifting in Nepal with minimal downtime. IT-safe packing, furniture handling, and professional coordination for businesses.', img: '/corporateMoving.jpg' },
-  { title: 'International Moving', desc: 'Smooth international moving from Nepal with customs documentation, permits, and safe packing for overseas relocations to India, Gulf, USA, UK & more.', img: '/InternationalMoving.jpg' },
-  { title: 'Packing & Boxing', desc: 'Premium packing and boxing services for safe room shifting and office shifting in Nepal. Fragile handling, systematic labeling, and inventory management.', img: '/PackingAndBoxing.jpg' },
-  { title: 'Vehicle & Bike Transport', desc: 'Secure vehicle and bike transport service across Nepal. Car and motorcycle transport with GPS tracking, safe carrier loading, and door-to-door delivery.', img: '/vehicleAndBikeTransport.jpg' },
-  { title: 'Storage Solutions', desc: 'Clean, secure storage solutions in Kathmandu for furniture, household items, and office equipment. Flexible rental terms and easy access during your move.', img: '/storageSolutions.webp' },
+  { title: 'Residential Shifting', desc: 'Professional residential shifting service in Kathmandu, Pokhara, Butwal and across Nepal. Careful packing, loading, transporting, and setup for houses and apartments.', img: '/images/ResidentialShifting.jpg' },
+  { title: 'Corporate Moving', desc: 'Expert corporate moving and office shifting in Nepal with minimal downtime. IT-safe packing, furniture handling, and professional coordination for businesses.', img: '/images/corporateMoving.jpg' },
+  { title: 'International Moving', desc: 'Smooth international moving from Nepal with customs documentation, permits, and safe packing for overseas relocations to India, Gulf, USA, UK & more.', img: '/images/InternationalMoving.jpg' },
+  { title: 'Packing & Boxing', desc: 'Premium packing and boxing services for safe room shifting and office shifting in Nepal. Fragile handling, systematic labeling, and inventory management.', img: '/images/PackingAndBoxing.jpg' },
+  { title: 'Vehicle & Bike Transport', desc: 'Secure vehicle and bike transport service across Nepal. Car and motorcycle transport with GPS tracking, safe carrier loading, and door-to-door delivery.', img: '/images/vehicleAndBikeTransport.jpg' },
+  { title: 'Storage Solutions', desc: 'Clean, secure storage solutions in Kathmandu for furniture, household items, and office equipment. Flexible rental terms and easy access during your move.', img: '/images/storageSolutions.webp' },
 ];
 
 export default function Services() {

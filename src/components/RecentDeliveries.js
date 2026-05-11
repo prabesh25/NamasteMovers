@@ -187,7 +187,7 @@ const deliveries = [
   {
     id: 1,
     item: 'Room Shifting – Furniture & Appliances',
-    image: '/darazImg.png',
+    image: '/images/darazImg.png',
     from: 'Kathmandu, Basantapur',
     to: 'Lalitpur, Durbar Square',
     price: 'Rs 5,000',
@@ -196,7 +196,7 @@ const deliveries = [
   {
     id: 2,
     item: 'Office Shifting – IT Equipment & Furniture',
-    image: '/officeShifting.jpg',
+    image: '/images/officeShifting.jpg',
     from: 'Kathmandu, New Baneshwor',
     to: 'Pokhara, Lakeside',
     price: 'Rs 15,000',
@@ -205,9 +205,9 @@ const deliveries = [
   {
     id: 3,
     item: 'Vehicle Transport – Motorcycle',
-    image: '/motorbikeMoving.jpg',
+    image: '/images/motorbikeMoving.jpg',
     from: 'Butwal',
-    to: 'Kathmandu, Kalanki',
+    to: 'Kathmandu, Baluwatar',
     price: 'Rs 8,000',
     eta: 'Same day',
   },
