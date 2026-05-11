@@ -18,54 +18,54 @@ import {
 
 /* ─── Media Data ─── */
 const galleryImages = [
-  // { src: "/img1.jpg", alt: "Professional packing team preparing household items in Kathmandu", category: "Packing" },
+  // { src: "/images/img1.jpg", alt: "Professional packing team preparing household items in Kathmandu", category: "Packing" },
   {
-    src: "/img2.jpg",
+    src: "/images/img2.jpg",
     alt: "Office shifting and corporate relocation at Dharan",
     category: "Dharan Transport",
   },
   {
-    src: "/img3.jpg",
+    src: "/images/img3.jpg",
     alt: "Safe vehicle transport across Nepal",
     category: "Kathmandu Transport",
   },
-  // { src: "/Hero.jpg", alt: "Sajilo Packers and Movers fleet ready for moving services", category: "Fleet" },
+  // { src: "/images/Hero.jpg", alt: "Sajilo Packers and Movers fleet ready for moving services", category: "Fleet" },
   {
-    src: "/img5.jpg",
+    src: "/images/img5.jpg",
     alt: "Customer relations team coordinating room shifting in Janakpur",
     category: "Janakpur Transport",
   },
   {
-    src: "/img6.jpg",
+    src: "/images/img6.jpg",
     alt: "Room shifting service — careful loading of furniture at Hetauda",
     category: "Hetauda Transport",
   },
   {
-    src: "/corporateMoving.jpg",
+    src: "/images/corporateMoving.jpg",
     alt: "Corporate moving and large-scale office relocation",
     category: "Office Shifting",
   },
   {
-    src: "/ResidentialShifting.jpg",
+    src: "/images/ResidentialShifting.jpg",
     alt: "Residential shifting — home moving in Kathmandu Valley",
     category: "Room Shifting",
   },
   {
-    src: "/vehicleAndBikeTransport.jpg",
+    src: "/images/vehicleAndBikeTransport.jpg",
     alt: "Bike and vehicle transport service with GPS tracking",
     category: "Vehicle Transport",
   },
   {
-    src: "/PackingAndBoxing.jpg",
+    src: "/images/PackingAndBoxing.jpg",
     alt: "Premium packing materials and boxing services",
     category: "Packing",
   },
   {
-    src: "/hero1.jpg",
+    src: "/images/hero1.jpg",
     alt: "Sajilo Packers moving truck on the highway",
     category: "Fleet",
   },
-  // { src: "/InternationalMoving.jpg", alt: "International moving and relocation services from Nepal", category: "Fleet" },
+  // { src: "/images/InternationalMoving.jpg", alt: "International moving and relocation services from Nepal", category: "Fleet" },
 ];
 
 const galleryVideos = [

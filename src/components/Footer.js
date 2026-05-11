@@ -36,7 +36,7 @@ export default function Footer() {
               Nepal's most trusted moving company. Professional room shifting, office shifting, vehicle transport &amp; packing services since 2010.
             </p>
             <address className="mt-3 text-sm text-gray-400 not-italic">
-              Kalanki, Kathmandu-32, Nepal<br />
+              Baluwatar, Kathmandu-32, Nepal<br />
               <a href="tel:+9779851071848" className="hover:text-white transition-colors">+977-9851071848</a><br />
               <a href="mailto:Padamsunchiuri95@gmail.com" className="hover:text-white transition-colors">Padamsunchiuri95@gmail.com</a>
             </address>
@@ -110,7 +110,7 @@ export default function Footer() {
       <div className="border-t border-gray-700/30">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <p className="text-xs text-gray-400">
-            © 2026 Sajilo Packers and Movers. All rights reserved. Professional room shifting, office shifting, vehicle transport &amp; packing services across Nepal. Kalanki, Kathmandu-32, Nepal.
+            © 2026 Sajilo Packers and Movers. All rights reserved. Professional room shifting, office shifting, vehicle transport &amp; packing services across Nepal. Baluwatar, Kathmandu-32, Nepal.
           </p>
         </div>
       </div>
