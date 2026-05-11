@@ -96,7 +96,7 @@ export default function Header() {
         {/* Brand */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/mainLogo.png"
+            src="/images/mainLogo1.png"
             alt="Sajilo Packers & Movers"
             width={150}
             height={0}
