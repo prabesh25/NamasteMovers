@@ -3,7 +3,7 @@ export const siteName = "Sajilo Packers and Movers";
 export const sitePhone = "+977-9851071848";
 export const siteEmail = "Padamsunchiuri95@gmail.com";
 export const siteAddress = {
-  street: "Kalanki",
+  street: "Baluwatar",
   city: "Kathmandu",
   state: "Bagmati",
   zip: "44600",
