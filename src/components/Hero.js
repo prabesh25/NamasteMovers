@@ -131,6 +131,7 @@ const Hero = () => {
           muted
           loop
           playsInline
+          poster="/images/Hero.png"
           className="w-full h-full object-cover opacity-90"
         >
           {" "}
