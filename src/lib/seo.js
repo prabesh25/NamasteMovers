@@ -72,6 +72,9 @@ export const serviceKeywords = [
 // Default metadata for the entire site (used in layout.js)
 export const defaultMetadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "LJxMm9oOCZj7zvmCKhYuaDg8SMdfYf43H3uBH3bYQHU",
+  },
   title: {
     default:
       "Sajilo Packers and Movers | #1 Room Shifting & Office Shifting Service in Nepal",
