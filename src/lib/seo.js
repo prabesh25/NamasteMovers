@@ -137,10 +137,6 @@ export const defaultMetadata = {
     "geo.position": "27.6933;85.2812",
     "ICBM": "27.6933, 85.2812",
   },
-  verification: {
-    // Add your Google Search Console verification code here
-    // google: "your-google-verification-code",
-  },
 };
 
 // JSON-LD Structured Data for Local Business
