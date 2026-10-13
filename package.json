@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "fast-glob": "^3.3.3",
     "fastq": "^1.17.1",
     "lucide-react": "^0.562.0",
